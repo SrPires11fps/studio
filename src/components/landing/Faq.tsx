@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 
 const faqs = [
     {
@@ -43,6 +44,13 @@ export function Faq() {
                 </AccordionItem>
             ))}
         </Accordion>
+        <div className="mt-12 text-center">
+          <Button size="lg" asChild>
+            <a href="#precos">
+              Quero aliviar minha dor agora
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
