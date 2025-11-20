@@ -57,7 +57,11 @@ export function Pricing() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>Resultados 67% Mais Rápidos Que No Plano Básico</span>
+                  <span>
+                    Resultados 67% Mais Rápidos
+                    <br />
+                    Que No Plano Básico
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
