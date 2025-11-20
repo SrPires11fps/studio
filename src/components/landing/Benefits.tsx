@@ -27,20 +27,20 @@ export function Benefits() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#faf8f1' }}>
       <div className="container px-4 md:px-6">
-        <div className="space-y-2 text-center mb-1">
+        <div className="space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Transformação que Você Merece</h2>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
             O Método Destravamento Instantâneo não é apenas para aliviar a dor, é também para devolver o controle da sua vida.
           </p>
         </div>
-        <div className="mx-auto grid justify-center gap-0 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mt-2">
+        <div className="mx-auto max-w-2xl space-y-10">
             {benefits.map((benefit) => (
-                <div key={benefit.title} className="flex flex-col items-center text-center p-4 rounded-lg transition-all hover:bg-card hover:shadow-lg">
+                <div key={benefit.title} className="flex flex-col items-center text-center p-6 rounded-lg bg-card shadow-lg">
                     <div className="mb-4 rounded-full bg-primary/20 p-3">
                         {benefit.icon}
                     </div>
-                    <h3 className="mb-2 text-xl font-bold">{benefit.title}</h3>
-                    <p className="text-foreground/80">{benefit.description}</p>
+                    <h3 className="mb-2 text-2xl font-bold">{benefit.title}</h3>
+                    <p className="text-foreground/80 text-lg">{benefit.description}</p>
                 </div>
             ))}
         </div>
