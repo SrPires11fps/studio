@@ -13,7 +13,7 @@ const materialBenefits = [
 
 export function Material() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section className="w-full py-6 md:py-12 lg:py-16 bg-background">
       <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
         <div className="flex justify-center">
             {materialImage && (
