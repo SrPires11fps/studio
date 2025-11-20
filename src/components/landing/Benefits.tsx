@@ -33,7 +33,7 @@ export function Benefits() {
             O Método Destravamento Instantâneo não é apenas para aliviar a dor, é também para devolver o controle da sua vida.
           </p>
         </div>
-        <div className="mx-auto grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mt-4">
+        <div className="mx-auto grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mt-2">
             {benefits.map((benefit) => (
                 <div key={benefit.title} className="flex flex-col items-center text-center p-6 rounded-lg transition-all hover:bg-card hover:shadow-lg">
                     <div className="mb-4 rounded-full bg-primary/20 p-4">
