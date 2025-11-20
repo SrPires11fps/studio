@@ -11,7 +11,7 @@ const faqs = [
     },
     {
         question: "Preciso de algum equipamento?",
-        answer: "Não. Todos os exercícios podem ser feitos em casa, utilizando apenas o peso do corpo. Um tapete de ioga ou uma toalha podem proporcionar mais conforto, mas não são essenciais."
+        answer: "Não. Todos os exercícios podem ser feitos em casa, sem nenhum equipamento. Um tapete de ioga pode proporcionar mais conforto, mas não é essencial."
     },
     {
         question: "Como funciona o acesso ao material?",
