@@ -34,7 +34,6 @@ export function Hero() {
               Sim, eu quero destravar minha coluna!
             </a>
           </Button>
-          <p className="text-xs text-foreground/60 mt-2">Compra segura e acesso imediato.</p>
         </div>
       </div>
     </section>
