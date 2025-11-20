@@ -6,7 +6,7 @@ const heroImage = PlaceHolderImages.find(p => p.id === 'hero-image');
 
 export function Hero() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-secondary/30">
+    <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24 bg-secondary/30">
       <div className="container px-4 md:px-6 text-center">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-foreground">
