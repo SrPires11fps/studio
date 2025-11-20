@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { getTestimonials } from "@/app/actions";
 import { Skeleton } from "@/components/ui/skeleton";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Button } from "../ui/button";
 
 const avatars = [
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-1'),
@@ -79,6 +80,13 @@ export function Testimonials() {
               </Card>
             ))
           )}
+        </div>
+        <div className="mt-12 text-center">
+          <Button size="lg" asChild>
+            <a href="#precos">
+              Quero aliviar minha dor agora
+            </a>
+          </Button>
         </div>
       </div>
     </section>
