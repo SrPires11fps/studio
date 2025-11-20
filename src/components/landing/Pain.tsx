@@ -39,12 +39,12 @@ export function Pain() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
-          {painPoints.map((point) => (
+          {painPoints.map((point, index) => (
             <Card key={point.title} className="flex flex-col overflow-hidden">
                 {point.image && (
                     <Image
                         alt={point.description}
-                        className="aspect-[3/2] w-full object-cover"
+                        className={`aspect-[3/2] w-full object-cover ${index === 2 ? 'object-top' : ''}`}
                         height={400}
                         src={point.image.imageUrl}
                         width={600}
