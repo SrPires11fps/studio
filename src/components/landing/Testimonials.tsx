@@ -33,9 +33,9 @@ export function Testimonials() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Não Apenas Nós Dizemos. Nossos Clientes Comprovam.</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Veja O Que Outras Pessoas Estão Falando</h2>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-            Veja o que pessoas reais estão falando sobre a transformação que viveram.
+            Veja o que outros compradores estão falando sobre a transformação que viveram.
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
