@@ -31,10 +31,10 @@ export function Pain() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-destructive font-medium">O Vilão Oculto</div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Sua Dor nas Costas é Mais do que Apenas um Incômodo</h2>
+            <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-destructive font-medium">A Prisão da Dor</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Não Deixe a Dor nas Costas Controlar Sua Vida</h2>
             <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Ela rouba sua alegria, sua energia e sua liberdade. Veja como a dor nas costas afeta negativamente sua vida.
+              Cada movimento é um lembrete constante do que você está perdendo. Descubra como a dor crônica está limitando seu potencial e sua felicidade.
             </p>
           </div>
         </div>
