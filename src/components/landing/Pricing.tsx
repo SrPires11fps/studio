@@ -47,7 +47,7 @@ export function Pricing() {
             </CardHeader>
             <CardContent className="flex-1">
               <div className="mb-4 text-center md:text-left">
-                  <p className="text-xl line-through text-muted-foreground">De R$97 por</p>
+                  <p className="text-lg line-through text-muted-foreground">De R$97 por</p>
                   <div className="text-5xl font-bold font-headline">R$19</div>
                   <Badge variant="secondary" className="mt-2 text-sm bg-green-100 text-green-800 hover:bg-green-100">
                     <BadgePercent className="mr-2 h-4 w-4" />
