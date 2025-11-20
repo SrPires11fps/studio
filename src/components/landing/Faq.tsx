@@ -26,7 +26,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
+    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f8f6ec' }}>
       <div className="container max-w-3xl px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Perguntas Frequentes</h2>
