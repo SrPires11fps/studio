@@ -27,7 +27,7 @@ const painPoints = [
 
 export function Pain() {
   return (
-    <section className="w-full pt-12 md:pt-12 lg:pt-16 pb-12 md:pb-24 lg:pb-32 bg-background">
+    <section className="w-full pt-12 md:pt-12 lg:pt-16 pb-12 md:pb-24 lg:pb-32" style={{ backgroundColor: '#FEFEFE' }}>
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
