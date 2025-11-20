@@ -5,11 +5,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const materialImage = PlaceHolderImages.find(p => p.id === 'material-guide');
 
 const materialBenefits = [
-    "Videoaulas práticas e diretas",
-    "Exercícios simples para fazer em casa",
+    "Método Completo com Passo a Passo",
+    "Material Ilustrativo e Didático",
     "Acesso vitalício ao conteúdo",
-    "Suporte para tirar dúvidas",
-    "Bônus exclusivos para acelerar seus resultados"
+    "Suporte para tirar dúvidas"
 ]
 
 export function Material() {
@@ -30,7 +29,7 @@ export function Material() {
         </div>
         <div className="space-y-4">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">O que você recebe</div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Seu Arsenal Completo Contra a Dor nas Costas</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Veja Um Dos Materiais Que Você Vai Receber</h2>
           <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Ao adquirir o Método Destravamento Instantâneo, você terá acesso a um material completo e passo a passo para eliminar a dor de vez.
           </p>
