@@ -23,13 +23,13 @@ export function Pricing() {
             <CardContent className="flex-1">
               <div className="text-5xl font-bold font-headline mb-4">R$10</div>
               <ul className="grid gap-3 text-sm">
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Método Completo Passo a Passo</span>
                 </li>
 
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Suporte apenas por e-mail</span>
                 </li>
               </ul>
@@ -47,20 +47,20 @@ export function Pricing() {
             <CardContent className="flex-1">
               <div className="text-5xl font-bold font-headline mb-4">R$19</div>
               <ul className="grid gap-3 text-sm">
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Acesso Vitalício ao Método 2.0</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Suporte Personalizado no WhatsApp</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Resultados 67% Mais Rápidos Que No Plano Básico</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
+                <li className="flex items-start gap-2">
+                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
                   <span>Bônus: Guia de Nutrição Anti-inflamatória</span>
                 </li>
               </ul>
