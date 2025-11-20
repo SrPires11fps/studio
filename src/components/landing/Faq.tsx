@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         question: "Como funciona o acesso ao material?",
-        answer: "Após a confirmação da compra, você receberá um e-mail com um link para acessar nossa área de membros. O acesso é vitalício, ou seja, você pode ver e rever as aulas quantas vezes quiser, para sempre."
+        answer: "Após a compra, você receberá um e-mail com um link para acessar o ebook completo. O acesso é vitalício, ou seja, você pode ver e rever as aulas quantas vezes quiser, para sempre."
     },
     {
         question: "E se eu não gostar? Qual a garantia?",
