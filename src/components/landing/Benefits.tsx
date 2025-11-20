@@ -1,4 +1,4 @@
-import { HeartPulse, ShieldCheck, Footprints, Smile } from "lucide-react";
+import { HeartPulse, ShieldCheck, Footprints } from "lucide-react";
 
 const benefits = [
     {
@@ -15,11 +15,6 @@ const benefits = [
         icon: <ShieldCheck className="w-8 h-8 text-primary" />,
         title: "Método Seguro e Comprovado",
         description: "Técnicas validadas por especialistas, que você pode fazer no conforto e segurança da sua casa."
-    },
-    {
-        icon: <Smile className="w-8 h-8 text-primary" />,
-        title: "Melhora na Qualidade de Vida",
-        description: "Viva com mais disposição, bom humor e sem o estresse constante causado pela dor crônica."
     }
 ]
 
