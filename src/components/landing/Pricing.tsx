@@ -35,7 +35,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" size="lg">Comprar Agora</Button>
+              <Button className="w-full" size="lg" variant="outline">Comprar Agora</Button>
             </CardFooter>
           </Card>
           <Card className="border-2 border-primary flex flex-col relative shadow-2xl">
