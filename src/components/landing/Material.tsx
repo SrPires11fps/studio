@@ -19,10 +19,10 @@ export function Material() {
             {materialImage && (
                 <Image
                     alt="Material do Método"
-                    className="mx-auto aspect-[3/4] overflow-hidden rounded-xl object-cover object-center sm:w-full shadow-2xl"
-                    height="800"
+                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full shadow-2xl"
+                    height="675"
                     src={materialImage.imageUrl}
-                    width="600"
+                    width="1200"
                     data-ai-hint={materialImage.imageHint}
                 />
             )}

@@ -27,8 +27,8 @@
     {
       "id": "material-guide",
       "description": "Image of the digital product guide.",
-      "imageUrl": "https://images.unsplash.com/photo-1659035260002-11d486d6e9f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlYm9vayUyMG1vY2t1cHxlbnwwfHx8fDE3NjM1OTk5NzF8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "ebook mockup"
+      "imageUrl": "https://storage.googleapis.com/aifirebase-1.appspot.com/users%2FwO50iS9MVDV4XPLgVpM5wNfLp6M2%2Fprojects%2Fbrn-as-1339%2Ffiles%2F1719532585292-0-material-image.png?alt=media&token=4d5462fa-7f8e-4a6c-94da-1a66718d727b",
+      "imageHint": "exercise guide"
     },
     {
       "id": "testimonial-avatar-1",
