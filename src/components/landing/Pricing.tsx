@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckIcon } from "lucide-react";
+import { CheckIcon, BadgePercent } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export function Pricing() {
   return (
@@ -45,7 +46,14 @@ export function Pricing() {
               <CardDescription>O plano ideal para quem quer resultados acelerados em até 10 dias.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
-              <div className="text-5xl font-bold font-headline mb-4">R$19</div>
+              <div className="mb-4 text-center md:text-left">
+                  <p className="text-xl line-through text-muted-foreground">De R$97 por</p>
+                  <div className="text-5xl font-bold font-headline">R$19</div>
+                  <Badge variant="secondary" className="mt-2 text-sm bg-green-100 text-green-800 hover:bg-green-100">
+                    <BadgePercent className="mr-2 h-4 w-4" />
+                    Você economiza R$78!
+                  </Badge>
+              </div>
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
