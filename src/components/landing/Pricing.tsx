@@ -17,11 +17,11 @@ export function Pricing() {
         <div className="mx-auto grid max-w-sm gap-8 md:max-w-4xl md:grid-cols-2 mt-12 items-start">
           <Card className="flex flex-col">
             <CardHeader className="pb-4">
-              <CardTitle className="text-2xl">Plano Essencial</CardTitle>
+              <CardTitle className="text-2xl">Plano Básico</CardTitle>
               <CardDescription>Acesso completo ao método principal para alívio da dor.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
-              <div className="text-5xl font-bold font-headline mb-4">R$97</div>
+              <div className="text-5xl font-bold font-headline mb-4">R$10</div>
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
