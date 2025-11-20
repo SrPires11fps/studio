@@ -17,8 +17,8 @@ export default function Home() {
         <Pain />
         <Benefits />
         <Material />
-        <Testimonials />
         <Pricing />
+        <Testimonials />
         <Faq />
       </main>
       <Footer />
