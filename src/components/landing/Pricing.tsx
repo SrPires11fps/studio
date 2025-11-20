@@ -42,7 +42,7 @@ export function Pricing() {
           <Card className="border-2 border-primary flex flex-col relative shadow-2xl">
             <div className="bg-primary text-primary-foreground py-1 px-4 rounded-full text-sm font-semibold absolute -top-4 left-1/2 -translate-x-1/2">Mais Popular</div>
             <CardHeader className="pb-4">
-              <CardTitle className="text-2xl">Plano Premium</CardTitle>
+              <CardTitle className="text-2xl">Plano Completo</CardTitle>
               <CardDescription>O plano ideal para quem quer resultados acelerados em até 10 dias.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
