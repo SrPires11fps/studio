@@ -30,9 +30,6 @@ export function Faq() {
       <div className="container max-w-3xl px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Perguntas Frequentes</h2>
-          <p className="text-foreground/80 md:text-xl">
-            Ainda tem dúvidas? Reunimos aqui as perguntas mais comuns para te ajudar.
-          </p>
         </div>
         <Accordion type="single" collapsible className="w-full mt-12">
             {faqs.map((faq, index) => (
