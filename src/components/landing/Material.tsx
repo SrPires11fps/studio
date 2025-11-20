@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const materialImage = PlaceHolderImages.find(p => p.id === 'material-guide');
 
 const materialBenefits = [
-    "Método Completo com Passo a Passo",
+    "Método Passo a Passo",
     "Material Ilustrativo e Didático",
     "Acesso vitalício ao conteúdo",
     "Suporte para tirar dúvidas"
@@ -28,10 +28,10 @@ export function Material() {
             )}
         </div>
         <div className="space-y-4">
-          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">O que você recebe</div>
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">O que você vai receber</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Veja Um Dos Materiais Que Você Vai Receber</h2>
           <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Ao adquirir o Método Destravamento Instantâneo, você terá acesso a um material completo e passo a passo para eliminar a dor de vez.
+            Ao adquirir o Método Destravamento Instantâneo, você terá acesso a um material completo com passo a passo para eliminar a dor de vez.
           </p>
           <ul className="grid gap-4 py-4">
             {materialBenefits.map((benefit) => (
