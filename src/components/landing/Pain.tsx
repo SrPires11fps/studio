@@ -1,5 +1,6 @@
+'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BedIcon, Frown, Users } from "lucide-react";
+import { BedIcon, Frown, Pill } from "lucide-react";
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -17,16 +18,16 @@ const painPoints = [
     image: PlaceHolderImages.find(p => p.id === 'pain-2')
   },
   {
-    icon: <Users className="w-12 h-12 text-destructive" />,
-    title: "Isolamento Social",
-    description: "Você evita sair e socializar porque a dor te deixa desconfortável e com medo de piorar.",
+    icon: <Pill className="w-12 h-12 text-destructive" />,
+    title: "Medo de Remédios e Fisioterapia",
+    description: "Você teme depender de medicamentos caros ou sessões de fisioterapia intermináveis que não resolvem a causa do problema.",
     image: PlaceHolderImages.find(p => p.id === 'pain-3')
   }
 ]
 
 export function Pain() {
   return (
-    <section className="w-full pt-6 md:pt-12 lg:pt-16 pb-12 md:pb-24 lg:pb-32 bg-background">
+    <section className="w-full pt-12 md:pt-12 lg:pt-16 pb-12 md:pb-24 lg:pb-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
