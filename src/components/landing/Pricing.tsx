@@ -44,8 +44,12 @@ export function Pricing() {
               <CardDescription>O plano ideal para quem quer resultados acelerados em até 10 dias.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
-              <div className="text-5xl font-bold font-headline mb-4">R$19,90</div>
+              <div className="text-5xl font-bold font-headline mb-4">R$19</div>
               <ul className="grid gap-3 text-sm">
+                <li className="flex items-center gap-2">
+                  <CheckIcon className="h-5 w-5 text-primary" />
+                  <span>Acesso Vitalício ao Método 2.0</span>
+                </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
                   <span>Acompanhamento em grupo no WhatsApp</span>
