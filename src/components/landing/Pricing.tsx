@@ -29,11 +29,11 @@ export function Pricing() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
-                  <span>Videoaulas passo a passo</span>
+                  <span>Método Passo a Passo</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
-                  <span>Suporte por e-mail</span>
+                  <span>Suporte apenas por e-mail</span>
                 </li>
               </ul>
             </CardContent>
