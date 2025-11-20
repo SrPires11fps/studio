@@ -9,9 +9,11 @@ export function Hero() {
     <section className="w-full py-6 md:py-12 lg:py-16 bg-secondary/30">
       <div className="container px-4 md:px-6 text-center">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-foreground">
-            Diga Adeus à Dor nas Costas Para Sempre
-          </h1>
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-foreground">
+              Diga Adeus à Dor nas Costas Para Sempre
+            </h1>
+          </div>
           {heroImage && (
             <div className="flex justify-center">
                 <Image
