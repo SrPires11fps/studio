@@ -1,0 +1,49 @@
+import { CheckCircle2 } from "lucide-react";
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+const materialImage = PlaceHolderImages.find(p => p.id === 'material-guide');
+
+const materialBenefits = [
+    "Videoaulas práticas e diretas",
+    "Exercícios simples para fazer em casa",
+    "Acesso vitalício ao conteúdo",
+    "Suporte para tirar dúvidas",
+    "Bônus exclusivos para acelerar seus resultados"
+]
+
+export function Material() {
+  return (
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+        <div className="flex justify-center">
+            {materialImage && (
+                <Image
+                    alt="Material do Método"
+                    className="mx-auto aspect-[3/4] overflow-hidden rounded-xl object-cover object-center sm:w-full shadow-2xl"
+                    height="800"
+                    src={materialImage.imageUrl}
+                    width="600"
+                    data-ai-hint={materialImage.imageHint}
+                />
+            )}
+        </div>
+        <div className="space-y-4">
+          <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">O que você recebe</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">Seu Arsenal Completo Contra a Dor nas Costas</h2>
+          <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Ao adquirir o Método Destravamento Instantâneo, você terá acesso a um material completo e passo a passo para eliminar a dor de vez.
+          </p>
+          <ul className="grid gap-4 py-4">
+            {materialBenefits.map((benefit) => (
+                <li key={benefit} className="flex items-start">
+                    <CheckCircle2 className="mr-3 h-6 w-6 flex-shrink-0 text-primary" />
+                    <span className="text-lg">{benefit}</span>
+                </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
