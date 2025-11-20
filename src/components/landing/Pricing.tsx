@@ -53,11 +53,11 @@ export function Pricing() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
-                  <span>Acompanhamento em grupo no WhatsApp</span>
+                  <span>Suporte Personalizado no WhatsApp</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
-                  <span>Aula ao vivo mensal para tirar dúvidas</span>
+                  <span>Resultados 67% Mais Rápidos Que No Plano Básico</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
