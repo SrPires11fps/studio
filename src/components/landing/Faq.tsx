@@ -41,7 +41,7 @@ export function Faq() {
                 </AccordionItem>
             ))}
         </Accordion>
-        <div className="mt-6 text-center">
+        <div className="mt-12 text-center">
           <Button size="lg" asChild>
             <a href="#precos">
               Quero aliviar minha dor agora

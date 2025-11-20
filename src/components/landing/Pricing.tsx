@@ -1,7 +1,20 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckIcon, BadgePercent } from "lucide-react";
+import { CheckIcon, BadgePercent, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export function Pricing() {
   return (
@@ -36,7 +49,32 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" size="lg" variant="outline">Comprar Agora</Button>
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button className="w-full" size="lg" variant="outline">Comprar Agora</Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle className="text-2xl font-headline text-center">Espere! Oferta Especial Para Você</AlertDialogTitle>
+                    <AlertDialogDescription className="text-center">
+                      Vimos que você se interessou pelo Plano Básico. Que tal levar o <strong>Plano Completo</strong> com todos os bônus por um preço ainda mais especial?
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
+                    <p className="text-lg text-green-900">Leve o <strong>Plano Completo</strong> por apenas</p>
+                    <div className="text-4xl font-bold text-green-900 my-2">R$15</div>
+                    <p className="text-sm text-green-800">Acesso vitalício, suporte no WhatsApp e muito mais!</p>
+                  </div>
+                  <AlertDialogFooter className="sm:justify-center flex-col sm:flex-col sm:space-x-0">
+                    <AlertDialogAction asChild>
+                       <Button size="lg"><TrendingUp className="mr-2" /> Sim, Quero Aproveitar o Desconto!</Button>
+                    </AlertDialogAction>
+                    <AlertDialogCancel asChild>
+                      <Button variant="link" className="text-muted-foreground">Não, quero comprar o básico e perder a oferta.</Button>
+                    </AlertDialogCancel>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
             </CardFooter>
           </Card>
           <Card className="border-2 border-primary flex flex-col relative shadow-2xl">
