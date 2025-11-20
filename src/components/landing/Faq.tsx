@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
     {
         question: "O método é seguro para qualquer idade?",
-        answer: "Sim, o Método Destravamento Instantâneo foi desenvolvido com exercícios de baixo impacto que podem ser adaptados para diferentes idades e níveis de condicionamento físico. No entanto, recomendamos sempre consultar um médico antes de iniciar qualquer nova atividade física."
+        answer: "Sim. O Método Destravamento Instantâneo foi desenvolvido com exercícios de zero impacto que podem ser feitos por qualquer pessoa, independente da idade ou condição física."
     },
     {
         question: "Em quanto tempo vejo os resultados?",
