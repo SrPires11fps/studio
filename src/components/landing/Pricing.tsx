@@ -69,8 +69,9 @@ export function Pricing() {
                 </li>
               </ul>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex-col">
               <Button className="w-full" size="lg">Comprar Plano Premium</Button>
+              <p className="text-xs text-muted-foreground mt-2 text-center uppercase font-bold">APROVEITE AGORA: Você não vai encontrar esse preço depois</p>
             </CardFooter>
           </Card>
         </div>
