@@ -15,37 +15,37 @@
     {
       "id": "pain-2",
       "description": "Person with back pain unable to sleep.",
-      "imageUrl": "https://images.unsplash.com/photo-1517912172058-994f5e342dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5zb21uaWElMjB0aXJlZHxlbnwwfHx8fDE3NjM2MTA4Nzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1517912172058-994f5e342dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW5zb21uaWElMjB0aXJlZHxlbnwwfHx8fDE3NjM2MTA4Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "insomnia tired"
     },
     {
       "id": "pain-3",
       "description": "Person with back pain missing out on activities.",
-      "imageUrl": "https://images.unsplash.com/photo-1541199249251-f713e6145474?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYWQlMjBwZXJzb258ZW58MHx8fHwxNzYzNjQ2NDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541199249251-f713e6145474?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYWQlMjBwZXJzb258ZW58MHx8fHwxNzYzNjQ2NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sad person"
     },
     {
       "id": "material-guide",
       "description": "Image of the digital product guide.",
-      "imageUrl": "https://storage.googleapis.com/aifirebase-1.appspot.com/users%2FwO50iS9MVDV4XPLgVpM5wNfLp6M2%2Fprojects%2Fbrn-as-1339%2Ffiles%2F1719532585292-0-material-image.png?alt=media&token=4d5462fa-7f8e-4a6c-94da-1a66718d727b",
+      "imageUrl": "https://i.ibb.co/mrd5hXJ/Screenshot-2025-11-20-at-12-57-34.jpg",
       "imageHint": "exercise guide"
     },
     {
       "id": "testimonial-avatar-1",
       "description": "Avatar for the first testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1ODUwMzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1ODUwMzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "testimonial-avatar-2",
       "description": "Avatar for the second testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYzNjI2MjY5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYzNjI2MjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman smiling"
     },
     {
       "id": "testimonial-avatar-3",
       "description": "Avatar for the third testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1OTUxOTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1OTUxOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     }
   ]
