@@ -25,7 +25,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#fbfaf6' }}>
+    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#faf8f1' }}>
       <div className="container px-4 md:px-6">
         <div className="space-y-2 text-center mb-1">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Transformação que Você Merece</h2>
