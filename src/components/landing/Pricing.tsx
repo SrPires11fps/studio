@@ -25,10 +25,6 @@ export function Pricing() {
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
-                  <span>Acesso vitalício ao método</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
                   <span>Método Passo a Passo</span>
                 </li>
                 <li className="flex items-center gap-2">
@@ -45,15 +41,11 @@ export function Pricing() {
             <div className="bg-primary text-primary-foreground py-1 px-4 rounded-full text-sm font-semibold absolute -top-4 left-1/2 -translate-x-1/2">Mais Popular</div>
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl">Plano Premium</CardTitle>
-              <CardDescription>O plano completo com bônus exclusivos para resultados acelerados.</CardDescription>
+              <CardDescription>O plano ideal para quem quer resultados acelerados em até 10 dias.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
-              <div className="text-5xl font-bold font-headline mb-4">R$147</div>
+              <div className="text-5xl font-bold font-headline mb-4">R$19,90</div>
               <ul className="grid gap-3 text-sm">
-                <li className="flex items-center gap-2">
-                  <CheckIcon className="h-5 w-5 text-primary" />
-                  <span className="font-semibold text-foreground">Tudo do Plano Essencial, e mais:</span>
-                </li>
                 <li className="flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-primary" />
                   <span>Acompanhamento em grupo no WhatsApp</span>
