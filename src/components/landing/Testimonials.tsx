@@ -31,7 +31,7 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
+    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f8f6ec' }}>
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Veja O Que Outras Pessoas Estão Falando</h2>
