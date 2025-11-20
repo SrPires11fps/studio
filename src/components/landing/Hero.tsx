@@ -11,7 +11,7 @@ export function Hero() {
         <div className="space-y-6">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-foreground">
-              Diga Adeus à Dor nas Costas Para Sempre
+              Diga Adeus à Dor nas <br /> Costas para Sempre
             </h1>
           </div>
           {heroImage && (
