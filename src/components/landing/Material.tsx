@@ -29,7 +29,7 @@ export function Material() {
               />
           )}
           <p className="max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Ao adquirir o <strong className="font-normal">Método Destravamento Instantâneo</strong>, você terá acesso a um material completo com passo a passo para eliminar a dor de vez.
+            Ao adquirir o <strong className="font-semibold">Método Destravamento Instantâneo</strong>, você terá acesso a um material completo com passo a passo para eliminar a dor de vez.
           </p>
           <ul className="grid gap-4 py-4">
             {materialBenefits.map((benefit) => (
