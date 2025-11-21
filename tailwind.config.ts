@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'base-plus-3': '1.03rem',
+        'base-plus-3': '1.09rem',
       },
       fontFamily: {
         body: ['Poppins', 'sans-serif'],

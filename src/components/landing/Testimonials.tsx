@@ -63,7 +63,7 @@ export function Testimonials() {
           ) : (
             testimonials.map((testimonial, index) => (
               <Card key={index} className="flex flex-col bg-card/80">
-                <CardContent className="pt-6 flex-grow pb-4">
+                <CardContent className="pt-6 flex-grow pb-0">
                   <p className="text-foreground/90 italic">&ldquo;{testimonial}&rdquo;</p>
                 </CardContent>
                 <CardHeader className="pt-0">
