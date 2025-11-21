@@ -42,7 +42,7 @@ export function Faq() {
             ))}
         </Accordion>
         <div className="mt-12 text-center">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="text-base-plus-3">
             <a href="#precos">
               Quero aliviar minha dor agora
             </a>
