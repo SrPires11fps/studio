@@ -5,8 +5,8 @@ import Image from "next/image";
 const painPoints = [
   {
     icon: <Frown className="w-8 h-8 text-destructive" />,
-    title: "Limita Seus Dias",
-    description: "A dor nas costas te impede de aproveitar a vida e transforma tarefas simples em desafios.",
+    title: "Dificulta Sua Rotina",
+    description: "Dificulta Sua Rotina",
   },
   {
     icon: <BedIcon className="w-8 h-8 text-destructive" />,
