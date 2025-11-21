@@ -1,9 +1,9 @@
-import { HeartPulse, ShieldCheck, Footprints } from "lucide-react";
+import { Smile, ShieldCheck, Footprints } from "lucide-react";
 import Image from "next/image";
 
 const benefits = [
     {
-        icon: <HeartPulse className="w-8 h-8 text-primary" />,
+        icon: <Smile className="w-8 h-8 text-primary" />,
         title: "Alívio Rápido e Duradouro",
         description: "Sinta o alívio da dor nas costas desde as primeiras sessões, com resultados que se mantêm a longo prazo.",
         image: {
