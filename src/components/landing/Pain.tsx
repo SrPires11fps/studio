@@ -6,7 +6,7 @@ const painPoints = [
   {
     icon: <Frown className="w-8 h-8 text-destructive" />,
     title: "Dificulta Sua Rotina",
-    description: "A dor nas costas trava seus movimentos e torna tarefas simples difíceis. Você para de fazer o que gosta porque o corpo não responde.",
+    description: "A dor nas costas te impede de aproveitar a vida e transforma tarefas simples em desafios.",
   },
   {
     icon: <BedIcon className="w-8 h-8 text-destructive" />,
