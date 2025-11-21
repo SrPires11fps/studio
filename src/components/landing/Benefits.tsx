@@ -58,9 +58,8 @@ export function Benefits() {
                         </div>
                     )}
                     <div className="flex items-center gap-2 mb-2">
-                        {!benefit.image && <h3 className="text-2xl font-bold">{benefit.title}</h3>}
-                         {benefit.image && benefit.icon}
-                         {benefit.image && <h3 className="text-2xl font-bold">{benefit.title}</h3>}
+                        {benefit.icon}
+                         <h3 className="text-2xl font-bold">{benefit.title}</h3>
                     </div>
                     <p className="text-foreground/80">{benefit.description}</p>
                 </div>
