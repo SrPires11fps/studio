@@ -16,7 +16,7 @@ const painPoints = [
   {
     icon: <Pill className="w-8 h-8 text-destructive" />,
     title: "Gera Insegurança",
-    description: "A dor crescente faz você temer depender de remédios, tratamentos caros ou da ajuda dos outros para conseguir se mover.",
+    description: "A dor faz você temer depender de remédios, tratamentos caros ou da ajuda dos outros para se mover.",
   }
 ]
 
