@@ -38,9 +38,6 @@ export function Pain() {
                     data-ai-hint="back pain illustration"
                 />
             </div>
-            <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              A dor crônica pode estar limitando seu potencial e sua felicidade. Veja se algum desses pontos parece familiar.
-            </p>
           </div>
         </div>
         <div className="mx-auto max-w-2xl space-y-8 mt-12">
