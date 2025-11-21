@@ -62,7 +62,7 @@ export function Benefits() {
                          {benefit.image && benefit.icon}
                          {benefit.image && <h3 className="text-2xl font-bold">{benefit.title}</h3>}
                     </div>
-                    <p className="text-foreground/80 text-lg">{benefit.description}</p>
+                    <p className="text-foreground/80">{benefit.description}</p>
                 </div>
             ))}
         </div>
