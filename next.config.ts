@@ -41,11 +41,17 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https_beta',
         hostname: 'i.imgur.com',
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.editorametamorfose.com.br',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
