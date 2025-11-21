@@ -37,7 +37,7 @@ export function Benefits() {
         <div className="space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Transformação que Você Merece</h2>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-            O <strong className="font-semibold">Método Destravamento Instantâneo</strong> vai gerar estes benefícios na sua vida:
+            O <strong className="font-semibold">Método Destravamento Instantâneo</strong> vai trazer estes benefícios na sua vida:
           </p>
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
