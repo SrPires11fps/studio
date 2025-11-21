@@ -59,7 +59,7 @@ export function Benefits() {
           </p>
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
-            {benefits.map((benefit) => (
+            {benefits.map((benefit, index) => (
                 <div key={benefit.title} className="flex flex-col items-center text-center p-6 rounded-lg bg-card shadow-lg">
                     {benefit.image ? (
                         <Image
@@ -76,7 +76,7 @@ export function Benefits() {
                         </div>
                     )}
                     <div className="flex items-center gap-2 mb-2">
-                        {benefit.icon}
+                        {index !== 2 && benefit.icon}
                          <h3 className="text-2xl font-bold">{benefit.title}</h3>
                     </div>
                     <p className="text-foreground/80">{benefit.description}</p>
