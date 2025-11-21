@@ -63,10 +63,10 @@ export function Testimonials() {
           ) : (
             testimonials.map((testimonial, index) => (
               <Card key={index} className="flex flex-col bg-card/80">
-                <CardContent className="pt-6 flex-grow">
+                <CardContent className="pt-6 flex-grow pb-4">
                   <p className="text-foreground/90 italic">&ldquo;{testimonial}&rdquo;</p>
                 </CardContent>
-                <CardHeader>
+                <CardHeader className="pt-0">
                   <div className="flex items-center gap-4">
                     <Avatar className="w-12 h-12">
                       {avatars[index] && <AvatarImage src={avatars[index]?.imageUrl} alt={userNames[index]} data-ai-hint={avatars[index]?.imageHint}/>}
