@@ -51,7 +51,7 @@ export function Pricing() {
             <CardFooter>
               <AlertDialog>
                 <AlertDialogTrigger asChild>
-                  <Button className="w-full" size="lg" variant="outline">Comprar Agora</Button>
+                  <Button className="w-full text-foreground/80" size="lg" variant="outline">Comprar Agora</Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent>
                   <AlertDialogHeader>
