@@ -1,4 +1,4 @@
-import { Smile, ShieldCheck, Footprints } from "lucide-react";
+import { Smile, ShieldCheck, Accessibility } from "lucide-react";
 import Image from "next/image";
 
 const benefits = [
@@ -13,7 +13,7 @@ const benefits = [
         }
     },
     {
-        icon: <Footprints className="w-8 h-8 text-primary" />,
+        icon: <Accessibility className="w-8 h-8 text-primary" />,
         title: "Recupere Sua Autonomia",
         description: "Volte a fazer as atividades que ama sem medo ou limitações. Recupere a liberdade de movimento.",
         image: {
