@@ -12,6 +12,7 @@ export default {
       fontSize: {
         'base-plus-3': '1.09rem',
         'base-plus-6': '1.12rem',
+        'base-plus-9': '1.19rem',
       },
       fontFamily: {
         body: ['Poppins', 'sans-serif'],

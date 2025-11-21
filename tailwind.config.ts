@@ -11,6 +11,7 @@ export default {
     extend: {
       fontSize: {
         'base-plus-3': '1.09rem',
+        'base-plus-9': '1.19rem',
       },
       fontFamily: {
         body: ['Poppins', 'sans-serif'],
