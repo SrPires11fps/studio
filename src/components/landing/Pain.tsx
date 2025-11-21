@@ -33,7 +33,7 @@ export function Pain() {
                     alt="Pessoas com dor nas costas"
                     className="rounded-xl object-cover"
                     height="300"
-                    src="https://i.imgur.com/9n9s8dM.png"
+                    src="https://i.imgur.com/bvNb4uw.png"
                     width="500"
                     data-ai-hint="back pain illustration"
                 />
