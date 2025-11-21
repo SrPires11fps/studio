@@ -13,7 +13,7 @@ const GenerateUserTestimonialsInputSchema = z.object({
     .number()
     .min(1)
     .max(5)
-    .default(3)
+    .default(4)
     .describe('The number of testimonials to generate.'),
 });
 

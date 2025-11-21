@@ -12,9 +12,10 @@ const avatars = [
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-1'),
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-2'),
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-3'),
+  PlaceHolderImages.find(p => p.id === 'testimonial-avatar-4'),
 ];
 
-const userNames = ["Carlos S.", "Mariana F.", "João P."];
+const userNames = ["Carlos S.", "Mariana F.", "João P.", "Antônio P."];
 
 export function Testimonials() {
   const [testimonials, setTestimonials] = useState<string[]>([]);
@@ -39,9 +40,9 @@ export function Testimonials() {
             Veja o que outros compradores estão falando sobre a transformação que viveram.
           </p>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
+        <div className="mx-auto grid max-w-7xl items-start gap-8 sm:grid-cols-1 md:grid-cols-2 md:gap-12 mt-12">
           {loading ? (
-            Array.from({ length: 3 }).map((_, index) => (
+            Array.from({ length: 4 }).map((_, index) => (
               <Card key={index} className="bg-card/80">
                 <CardHeader>
                   <div className="flex items-center gap-4">
