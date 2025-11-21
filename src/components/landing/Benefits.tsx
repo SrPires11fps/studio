@@ -25,7 +25,7 @@ export function Benefits() {
         <div className="space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Transformação que Você Merece</h2>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-            O Método Destravamento Instantâneo não é apenas para aliviar a dor, é também para devolver o controle da sua vida.
+            O <strong className="font-semibold">Método Destravamento Instantâneo</strong> não é apenas para aliviar a dor, é também para devolver o controle da sua vida.
           </p>
         </div>
         <div className="mx-auto max-w-2xl space-y-10">
