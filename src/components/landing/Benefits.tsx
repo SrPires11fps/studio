@@ -25,7 +25,7 @@ const benefits = [
         title: "Alívio Rápido e Duradouro",
         description: "Sinta o alívio da dor nas costas desde as primeiras sessões, com resultados que se mantêm a longo prazo.",
         image: {
-            src: "https://picsum.photos/seed/benefit1/600/400",
+            src: "https://i.imgur.com/4eIw7d5.png",
             alt: "Pessoa sentindo alívio da dor nas costas.",
             hint: "relief stretching"
         }
