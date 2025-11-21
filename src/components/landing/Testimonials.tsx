@@ -63,7 +63,7 @@ export function Testimonials() {
           ) : (
             testimonials.map((testimonial, index) => (
               <Card key={index} className="flex flex-col bg-card/80">
-                <CardContent className="pt-6 flex-grow pb-0">
+                <CardContent className="pt-6 flex-grow pb-4">
                   <p className="text-foreground/90 italic">&ldquo;{testimonial}&rdquo;</p>
                 </CardContent>
                 <CardHeader className="pt-0">
@@ -83,7 +83,7 @@ export function Testimonials() {
           )}
         </div>
         <div className="mt-12 text-center">
-          <Button size="lg" asChild className="text-base-plus-3">
+          <Button size="lg" asChild className="text-base-plus-6">
             <a href="#precos">
               Quero aliviar minha dor agora
             </a>
