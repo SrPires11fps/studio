@@ -35,7 +35,7 @@ const benefits = [
         title: "Recupere Sua Autonomia",
         description: "Volte a fazer as atividades que ama sem medo ou limitações. Recupere a liberdade de movimento.",
         image: {
-            src: "https://picsum.photos/seed/benefit2/600/400",
+            src: "https://i.imgur.com/JlMqhCZ.png",
             alt: "Pessoa caminhando livremente.",
             hint: "person walking outdoors"
         }
