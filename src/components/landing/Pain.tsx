@@ -1,20 +1,19 @@
 'use client';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BedIcon, Frown, Pill } from "lucide-react";
 
 const painPoints = [
   {
-    icon: <Frown className="w-10 h-10 text-destructive" />,
+    icon: <Frown className="w-8 h-8 text-destructive" />,
     title: "Limita Seus Dias",
     description: "A dor nas costas te impede de aproveitar a vida e transforma tarefas simples em desafios.",
   },
   {
-    icon: <BedIcon className="w-10 h-10 text-destructive" />,
+    icon: <BedIcon className="w-8 h-8 text-destructive" />,
     title: "Piora Suas Noites",
     description: "A dor constante interrompe seu sono, deixando você sempre com cansaço e sem energia.",
   },
   {
-    icon: <Pill className="w-10 h-10 text-destructive" />,
+    icon: <Pill className="w-8 h-8 text-destructive" />,
     title: "Gera Insegurança",
     description: "Você teme depender de remédios ou de tratamentos que não resolvem a causa do problema.",
   }
@@ -33,19 +32,15 @@ export function Pain() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
+        <div className="mx-auto max-w-2xl space-y-8 mt-12">
           {painPoints.map((point) => (
-            <Card key={point.title} className="flex flex-col overflow-hidden text-center items-center">
-                <CardHeader>
-                    <div className="flex flex-col items-center gap-4">
-                        {point.icon}
-                        <CardTitle className="text-2xl font-bold">{point.title}</CardTitle>
-                    </div>
-                </CardHeader>
-              <CardContent>
-                <p className="text-foreground/80">{point.description}</p>
-              </CardContent>
-            </Card>
+            <div key={point.title} className="flex items-start gap-4">
+              <div className="flex-shrink-0">{point.icon}</div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold">{point.title}</h3>
+                <p className="text-foreground/80 mt-1">{point.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
