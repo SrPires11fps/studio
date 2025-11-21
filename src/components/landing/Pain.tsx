@@ -10,8 +10,8 @@ const painPoints = [
   },
   {
     icon: <BedIcon className="w-8 h-8 text-destructive" />,
-    title: "Piora Suas Noites",
-    description: "A dor constante interrompe seu sono, deixando você sempre com cansaço e sem energia.",
+    title: "Piora Seu Sono",
+    description: "A dor dificulta seu sono e você acorda cansado, sem energia e sem disposição para começar o dia.",
   },
   {
     icon: <Pill className="w-8 h-8 text-destructive" />,
