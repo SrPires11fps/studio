@@ -43,7 +43,7 @@ const benefits = [
     {
         icon: <ShieldCheck className="w-12 h-12 text-primary" />,
         title: "Método Seguro e Comprovado",
-        description: "Técnicas validadas por especialistas, que você pode fazer no conforto e segurança da sua casa.",
+        description: "Técnicas validadas por especialistas, que você pode fazer no conforto da sua casa.",
         image: null
     }
 ]
