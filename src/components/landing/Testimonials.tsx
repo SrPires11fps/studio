@@ -10,12 +10,12 @@ import { Button } from "../ui/button";
 
 const avatars = [
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-1'),
-  PlaceHolderImages.find(p => p.id === 'testimonial-avatar-2'),
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-3'),
+  PlaceHolderImages.find(p => p.id === 'testimonial-avatar-2'),
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-4'),
 ];
 
-const userNames = ["Maria Lúcia, 64 anos", "Mariana, 48 anos", "Antônio, 39 anos", "Josemar, 73 anos"];
+const userNames = ["Maria Lúcia, 64 anos", "Antônio, 39 anos", "Mariana, 48 anos", "Josemar, 73 anos"];
 
 export function Testimonials() {
   const [testimonials, setTestimonials] = useState<string[]>([]);
