@@ -14,7 +14,7 @@ export async function getTestimonials() {
     console.error('Error generating testimonials:', error);
     // Return fallback testimonials in case of an error
     return [
-        "Eu estava cético, mas o Método Destravamento Instantâneo mudou minha vida. As dores que me assombravam há anos desapareceram em dias. A facilidade de seguir os exercícios é incrível. Finalmente, sinto que tenho minha vida de volta, sem medo de me mover.",
+        "Eu acordava tão travada que mal conseguia levantar da cama. Nos primeiros dia usando o Método Destravamento Instantâneo, senti minha lombar soltar em poucos minutos. Em apenas 2 semanas, a dor desapareceu por completo. Hoje consigo caminhar, arrumar minha casa e fazer minhas atividades sem medo. Nunca imaginei que algo tão simples pudesse mudar tanto a minha vida.",
         "Com uma rotina agitada, eu não tinha tempo para tratamentos longos. Este método foi a solução perfeita. É tão prático e os resultados são rápidos. Consigo fazer as aulas em qualquer lugar. Minha postura melhorou e a dor nas costas é coisa do passado. Recomendo demais!",
         "Depois da gravidez, as dores nas costas se tornaram constantes. Tentei de tudo, sem sucesso. O Método Destravamento Instantâneo foi o único que me trouxe alívio de verdade. A melhora na minha qualidade de vida é notável, posso brincar com meu filho sem sentir dor."
     ];
