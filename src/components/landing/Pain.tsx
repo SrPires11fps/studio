@@ -1,27 +1,22 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BedIcon, Frown, Pill } from "lucide-react";
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const painPoints = [
   {
-    icon: <Frown className="w-12 h-12 text-destructive" />,
-    title: "Dor que Limita Seus Dias",
-    description: "A dor nas costas te impede de aproveitar a vida, transformando tarefas simples em desafios dolorosos.",
-    image: PlaceHolderImages.find(p => p.id === 'pain-1')
+    icon: <Frown className="w-10 h-10 text-destructive" />,
+    title: "Limita Seus Dias",
+    description: "A dor nas costas te impede de aproveitar a vida e transforma tarefas simples em desafios.",
   },
   {
-    icon: <BedIcon className="w-12 h-12 text-destructive" />,
-    title: "Noites Mal Dormidas",
-    description: "A dor constante interrompe seu sono, deixando você cansado e sem energia para o dia seguinte.",
-    image: PlaceHolderImages.find(p => p.id === 'pain-2')
+    icon: <BedIcon className="w-10 h-10 text-destructive" />,
+    title: "Piora Suas Noites",
+    description: "A dor constante interrompe seu sono, deixando você sempre com cansaço e sem energia.",
   },
   {
-    icon: <Pill className="w-12 h-12 text-destructive" />,
-    title: "Medo de Remédios e Fisioterapia",
-    description: "Você teme depender de medicamentos caros ou sessões de fisioterapia intermináveis que não resolvem a causa do problema.",
-    image: PlaceHolderImages.find(p => p.id === 'pain-3')
+    icon: <Pill className="w-10 h-10 text-destructive" />,
+    title: "Gera Insegurança",
+    description: "Você teme depender de remédios ou de tratamentos que não resolvem a causa do problema.",
   }
 ]
 
@@ -32,27 +27,17 @@ export function Pain() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-destructive font-medium">A Prisão da Dor</div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Não Deixe a Dor nas Costas Controlar Sua Vida</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Você Se Identifica Com Algum Desses Pontos?</h2>
             <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Cada movimento é um lembrete constante do que você está perdendo. Descubra como a dor crônica está limitando seu potencial e sua felicidade.
+              A dor crônica pode estar limitando seu potencial e sua felicidade. Veja se algum desses pontos parece familiar.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-3 mt-12">
-          {painPoints.map((point, index) => (
-            <Card key={point.title} className="flex flex-col overflow-hidden">
-                {point.image && (
-                    <Image
-                        alt={point.description}
-                        className={`aspect-[3/2] w-full object-cover ${index === 2 ? 'object-top' : ''}`}
-                        height={400}
-                        src={point.image.imageUrl}
-                        width={600}
-                        data-ai-hint={point.image.imageHint}
-                    />
-                )}
+          {painPoints.map((point) => (
+            <Card key={point.title} className="flex flex-col overflow-hidden text-center items-center">
                 <CardHeader>
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col items-center gap-4">
                         {point.icon}
                         <CardTitle className="text-2xl font-bold">{point.title}</CardTitle>
                     </div>
