@@ -57,7 +57,7 @@ export function Pricing() {
                   <AlertDialogHeader>
                     <AlertDialogTitle className="text-2xl font-headline text-center">Espere! Oferta Especial Para Você</AlertDialogTitle>
                     <AlertDialogDescription className="text-center">
-                      Vimos que você se interessou pelo Plano Básico. Que tal levar o <strong>Plano Completo</strong> com todos os bônus por um preço ainda mais especial?
+                      Que tal levar o <strong>Plano Completo</strong> com todos os bônus por um preço ainda mais especial?
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
@@ -116,7 +116,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex-col">
-              <Button className="w-full text-base" size="lg">Comprar Agora</Button>
+              <Button className="w-full text-lg" size="lg">Comprar Agora</Button>
               <p className="text-xs text-muted-foreground mt-2 text-center uppercase font-bold">APROVEITE AGORA: Você não vai encontrar esse preço depois</p>
             </CardFooter>
           </Card>
