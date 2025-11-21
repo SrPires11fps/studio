@@ -1,5 +1,23 @@
-import { Smile, ShieldCheck, Accessibility } from "lucide-react";
+import { Smile, ShieldCheck } from "lucide-react";
 import Image from "next/image";
+
+const PersonStandingIcon = ({ className }: { className?: string }) => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
+        className={className}
+    >
+        <circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/>
+    </svg>
+);
+
 
 const benefits = [
     {
@@ -13,7 +31,7 @@ const benefits = [
         }
     },
     {
-        icon: <Accessibility className="w-8 h-8 text-primary" />,
+        icon: <PersonStandingIcon className="w-8 h-8 text-primary" />,
         title: "Recupere Sua Autonomia",
         description: "Volte a fazer as atividades que ama sem medo ou limitações. Recupere a liberdade de movimento.",
         image: {
