@@ -1,5 +1,6 @@
 'use client';
 import { BedIcon, Frown, Pill } from "lucide-react";
+import Image from "next/image";
 
 const painPoints = [
   {
@@ -27,6 +28,16 @@ export function Pain() {
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-destructive font-medium">A Prisão da Dor</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Você Se Identifica Com Algum Desses Pontos?</h2>
+             <div className="flex justify-center py-6">
+                <Image
+                    alt="Pessoas com dor nas costas"
+                    className="rounded-xl object-cover"
+                    height="300"
+                    src="https://i.imgur.com/9n9s8dM.png"
+                    width="500"
+                    data-ai-hint="back pain illustration"
+                />
+            </div>
             <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               A dor crônica pode estar limitando seu potencial e sua felicidade. Veja se algum desses pontos parece familiar.
             </p>
