@@ -83,7 +83,7 @@ export function Testimonials() {
           )}
         </div>
         <div className="mt-12 text-center">
-          <Button size="lg" asChild className="text-base-plus-9">
+          <Button size="lg" asChild className="text-lg">
             <a href="#precos">
               Quero aliviar minha dor agora
             </a>
