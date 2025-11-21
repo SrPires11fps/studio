@@ -67,7 +67,7 @@ export function Benefits() {
                             alt={benefit.image.alt}
                             width={600}
                             height={400}
-                            className="mb-4 rounded-lg object-cover aspect-video"
+                            className="mb-4 rounded-lg object-cover object-top aspect-video"
                             data-ai-hint={benefit.image.hint}
                         />
                     ) : (
