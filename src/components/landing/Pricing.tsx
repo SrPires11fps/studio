@@ -116,7 +116,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="flex-col">
-              <Button className="w-full" size="lg">Comprar Agora</Button>
+              <Button className="w-full text-base" size="lg">Comprar Agora</Button>
               <p className="text-xs text-muted-foreground mt-2 text-center uppercase font-bold">APROVEITE AGORA: Você não vai encontrar esse preço depois</p>
             </CardFooter>
           </Card>
