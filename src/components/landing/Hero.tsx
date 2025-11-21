@@ -31,7 +31,7 @@ export function Hero() {
           </p>
         </div>
         <div className="mt-8">
-          <Button size="lg" className="text-primary-foreground/90" asChild>
+          <Button size="lg" className="text-primary-foreground" asChild>
             <a href="#precos">
               Quero aliviar minha dor agora
             </a>
