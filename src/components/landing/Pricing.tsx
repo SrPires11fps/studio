@@ -39,7 +39,7 @@ export function Pricing() {
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>Método Completo Passo a Passo</span>
+                  <span>Método 1.0 Completo Passo a Passo</span>
                 </li>
 
                 <li className="flex items-start gap-2">
