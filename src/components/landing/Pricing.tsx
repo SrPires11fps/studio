@@ -68,7 +68,7 @@ export function Pricing() {
                   <AlertDialogFooter className="sm:justify-center flex-col sm:flex-col sm:space-x-0">
                     <AlertDialogAction asChild>
                       <a href="https://pay.cakto.com.br/rf695av_661648">
-                        <Button size="lg"><TrendingUp className="mr-2" /> Sim, Quero Aproveitar o Desconto!</Button>
+                        <TrendingUp className="mr-2" /> Sim, Quero Aproveitar o Desconto!
                       </a>
                     </AlertDialogAction>
                     <AlertDialogCancel asChild>
