@@ -72,7 +72,9 @@ export function Pricing() {
                       </a>
                     </AlertDialogAction>
                     <AlertDialogCancel asChild>
-                      <Button variant="link" className="text-muted-foreground">Não, quero comprar o básico e perder a oferta.</Button>
+                      <a href="https://pay.cakto.com.br/33gfd89_661981">
+                        <Button variant="link" className="text-muted-foreground">Não, quero comprar o básico e perder a oferta.</Button>
+                      </a>
                     </AlertDialogCancel>
                   </AlertDialogFooter>
                 </AlertDialogContent>
