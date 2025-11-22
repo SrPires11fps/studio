@@ -95,7 +95,7 @@ export function Pricing() {
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>Acesso Vitalício ao Método 2.0</span>
+                  <span>Acesso Vitalício ao <strong className="font-semibold">Método 2.0</strong></span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
@@ -111,7 +111,7 @@ export function Pricing() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>Bônus: Guia de Nutrição Anti-inflamatória</span>
+                  <span><strong className="font-semibold">Bônus:</strong> Guia de Nutrição Anti-inflamatória</span>
                 </li>
               </ul>
             </CardContent>
