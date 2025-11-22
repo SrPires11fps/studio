@@ -95,7 +95,7 @@ export function Pricing() {
               <ul className="grid gap-3 text-sm">
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>Acesso Vitalício ao <strong className="font-semibold">Método 2.0</strong></span>
+                  <span>Acesso Vitalício ao Método 2.0</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
