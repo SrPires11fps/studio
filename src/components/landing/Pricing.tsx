@@ -57,7 +57,7 @@ export function Pricing() {
                   <AlertDialogHeader>
                     <AlertDialogTitle className="text-2xl font-headline text-center">Espere! Oferta Especial Para Você</AlertDialogTitle>
                     <AlertDialogDescription className="text-center">
-                      Que tal levar o <strong>Plano Completo</strong> com todos os bônus por um preço ainda mais especial?
+                      Que tal levar o <strong>Plano Completo</strong> com todos os bônus<br /> por um preço ainda mais especial?
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
