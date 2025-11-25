@@ -32,7 +32,7 @@ export function Pricing() {
           <Card className="flex flex-col">
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl">Plano Básico</CardTitle>
-              <CardDescription>Acesso completo ao método principal para alívio da dor.</CardDescription>
+              <CardDescription>Acesso ao método principal para alívio da dor.</CardDescription>
             </CardHeader>
             <CardContent className="flex-1">
               <div className="text-5xl font-bold font-headline mb-4">R$10</div>
