@@ -63,7 +63,7 @@ export function Pricing() {
                   <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
                     <p className="text-lg text-green-900">Leve o <strong>Plano Completo</strong> por apenas</p>
                     <div className="text-4xl font-bold text-green-900 my-2">R$15</div>
-                    <p className="text-sm text-green-800">Acesso vitalício, suporte no WhatsApp e muito mais!</p>
+                    <p className="text-sm text-green-800">Método 2.0, suporte no WhatsApp, Bônus de Alimentação Anti-Inflamatória, e mais.</p>
                   </div>
                   <AlertDialogFooter className="sm:justify-center flex-col sm:flex-col sm:space-x-0">
                     <AlertDialogAction asChild>
