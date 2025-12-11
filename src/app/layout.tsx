@@ -6,6 +6,9 @@ import Script from 'next/script';
 export const metadata: Metadata = {
   title: 'Método Destravamento Instantâneo',
   description: 'Diga adeus à dor nas costas e recupere sua qualidade de vida.',
+  icons: {
+    icon: 'https://i.imgur.com/kgsU2l3.png',
+  },
 };
 
 export default function RootLayout({
