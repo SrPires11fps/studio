@@ -26,6 +26,18 @@ export default function RootLayout({
           async
           defer
         ></Script>
+        <Script id="back-redirect" strategy="afterInteractive">
+          {`
+            (function(w,d,l){
+              history.pushState(null, null, l.href);
+              w.addEventListener('popstate', function () {
+                if (!l.href.includes('#oferta-especial')) {
+                  l.href = '/#oferta-especial';
+                }
+              });
+            }(window,document,location));
+          `}
+        </Script>
       </head>
       <body className="font-body antialiased">
         {children}
