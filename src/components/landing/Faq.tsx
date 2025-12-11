@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { SmoothLink } from "./SmoothLink";
 
 const faqs = [
     {
@@ -46,9 +47,11 @@ export function Faq() {
             ))}
         </Accordion>
         <div className="mt-12 text-center">
-          <Button size="lg" className="text-lg">
-            Quero aliviar minha dor agora
-          </Button>
+            <SmoothLink href="#precos">
+                <Button size="lg" className="text-lg">
+                    Quero aliviar minha dor agora
+                </Button>
+            </SmoothLink>
         </div>
       </div>
     </section>

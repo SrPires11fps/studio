@@ -7,6 +7,7 @@ import { getTestimonials } from "@/app/actions";
 import { Skeleton } from "@/components/ui/skeleton";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "../ui/button";
+import { SmoothLink } from "./SmoothLink";
 
 const avatars = [
   PlaceHolderImages.find(p => p.id === 'testimonial-avatar-1'),
@@ -83,9 +84,11 @@ export function Testimonials() {
           )}
         </div>
         <div className="mt-12 text-center">
-          <Button size="lg" className="text-lg">
-            Quero aliviar minha dor agora
-          </Button>
+            <SmoothLink href="#precos">
+                <Button size="lg" className="text-lg">
+                    Quero aliviar minha dor agora
+                </Button>
+            </SmoothLink>
         </div>
       </div>
     </section>
