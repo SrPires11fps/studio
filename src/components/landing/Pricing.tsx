@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckIcon, BadgePercent, TrendingUp } from "lucide-react";
@@ -17,6 +18,14 @@ import {
 } from "@/components/ui/alert-dialog"
 
 export function Pricing() {
+  const [isSpecialOfferOpen, setIsSpecialOfferOpen] = useState(false);
+
+  useEffect(() => {
+    if (window.location.hash === '#oferta-especial') {
+      setIsSpecialOfferOpen(true);
+    }
+  }, []);
+
   return (
     <section id="precos" className="w-full py-6 md:py-12 lg:py-16 bg-background">
       <div className="container px-4 md:px-6">
@@ -49,7 +58,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <AlertDialog>
+              <AlertDialog open={isSpecialOfferOpen} onOpenChange={setIsSpecialOfferOpen}>
                 <AlertDialogTrigger asChild>
                   <Button className="w-full text-foreground/80" size="lg" variant="outline">Comprar Agora</Button>
                 </AlertDialogTrigger>
