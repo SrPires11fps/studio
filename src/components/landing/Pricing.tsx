@@ -21,9 +21,22 @@ export function Pricing() {
   const [isSpecialOfferOpen, setIsSpecialOfferOpen] = useState(false);
 
   useEffect(() => {
-    if (window.location.hash === '#oferta-especial') {
-      setIsSpecialOfferOpen(true);
-    }
+    const checkHash = () => {
+      if (window.location.hash === '#oferta-especial') {
+        setIsSpecialOfferOpen(true);
+      }
+    };
+
+    // Check on initial load
+    checkHash();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', checkHash, false);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener('hashchange', checkHash, false);
+    };
   }, []);
 
   return (
