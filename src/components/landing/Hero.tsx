@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Link from "next/link";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'hero-image');
 
@@ -31,8 +32,8 @@ export function Hero() {
           </p>
         </div>
         <div className="mt-8">
-          <Button size="lg" className="text-primary-foreground text-base">
-              Quero aliviar minha dor agora
+          <Button size="lg" className="text-primary-foreground text-base" asChild>
+            <Link href="#precos">Quero aliviar minha dor agora</Link>
           </Button>
         </div>
       </div>
