@@ -17,7 +17,7 @@ const faqs = [
     },
     {
         question: "Como funciona o acesso ao material?",
-        answer: "Após a compra, você receberá um e-mail com o acesso para o ebook completo. O acesso é vitalício, você pode ver as aulas quantas vezes quiser, para sempre."
+        answer: "Após a compra, você receberá um <strong class=\"font-semibold\">e-mail com o acesso</strong> para o ebook completo. O acesso é vitalício, você pode ver as aulas quantas vezes quiser, para sempre."
     },
     {
         question: "E se eu não gostar? Qual a garantia?",
@@ -37,7 +37,7 @@ export function Faq() {
                 <AccordionItem key={index} value={`item-${index + 1}`}>
                     <AccordionTrigger className="text-lg text-left hover:no-underline font-semibold">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-base text-foreground/80">
-                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" || faq.question === "Preciso de algum equipamento?" ? (
+                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" || faq.question === "Preciso de algum equipamento?" || faq.question === "Como funciona o acesso ao material?" ? (
                             <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                         ) : (
                             faq.answer
