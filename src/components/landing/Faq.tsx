@@ -5,7 +5,7 @@ import { SmoothLink } from "./SmoothLink";
 const faqs = [
     {
         question: "O método é seguro para qualquer idade?",
-        answer: "Sim. O Método Destravamento Instantâneo foi desenvolvido com exercícios de zero impacto que podem ser feitos por qualquer pessoa, independente da idade ou condição física."
+        answer: "Sim. O Método Destravamento Instantâneo foi desenvolvido com exercícios de zero impacto que <strong class=\"font-semibold\">podem ser feitos por qualquer pessoa</strong>, independente da idade ou condição física."
     },
     {
         question: "Em quanto tempo vejo os resultados?",
@@ -37,7 +37,7 @@ export function Faq() {
                 <AccordionItem key={index} value={`item-${index + 1}`}>
                     <AccordionTrigger className="text-lg text-left hover:no-underline font-semibold">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-base text-foreground/80">
-                        {faq.question === "E se eu não gostar? Qual a garantia?" ? (
+                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" ? (
                             <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                         ) : (
                             faq.answer
