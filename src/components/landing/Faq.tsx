@@ -17,7 +17,7 @@ const faqs = [
     },
     {
         question: "Como funciona o acesso ao material?",
-        answer: "Após a compra, você receberá um <strong class=\"font-semibold\">e-mail com o acesso</strong> para o ebook completo. O acesso é vitalício, você pode ver as aulas quantas vezes quiser, para sempre."
+        answer: "Após a compra, você receberá um <strong class=\"font-semibold\">e-mail com o acesso</strong> para o ebook completo. O <strong class=\"font-semibold\">acesso é vitalício</strong>, você pode ver as aulas quantas vezes quiser, para sempre."
     },
     {
         question: "E se eu não gostar? Qual a garantia?",
