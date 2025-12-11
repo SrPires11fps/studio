@@ -13,7 +13,7 @@ const faqs = [
     },
     {
         question: "Preciso de algum equipamento?",
-        answer: "Não. Todos os exercícios podem ser feitos em casa, sem nenhum equipamento. Um tapete de ioga pode proporcionar mais conforto, mas não é essencial."
+        answer: "Não. Todos os exercícios podem ser <strong class=\"font-semibold\">feitos em casa, sem nenhum equipamento</strong>. Um tapete de ioga pode proporcionar mais conforto, mas não é essencial."
     },
     {
         question: "Como funciona o acesso ao material?",
@@ -37,7 +37,7 @@ export function Faq() {
                 <AccordionItem key={index} value={`item-${index + 1}`}>
                     <AccordionTrigger className="text-lg text-left hover:no-underline font-semibold">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-base text-foreground/80">
-                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" ? (
+                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" || faq.question === "Preciso de algum equipamento?" ? (
                             <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                         ) : (
                             faq.answer
