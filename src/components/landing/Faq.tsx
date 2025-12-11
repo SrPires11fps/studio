@@ -9,7 +9,7 @@ const faqs = [
     },
     {
         question: "Em quanto tempo vejo os resultados?",
-        answer: "Muitos de nossos clientes relatam alívio significativo já nas primeiras semanas. Os resultados variam de pessoa para pessoa, mas a consistência na prática dos exercícios é fundamental para um alívio rápido e duradouro."
+        answer: "Muitos de nossos clientes relatam <strong class=\"font-semibold\">alívio significativo já nas primeiras semanas</strong>. Os resultados variam de pessoa para pessoa, mas a consistência na prática dos exercícios é fundamental para um alívio rápido e duradouro."
     },
     {
         question: "Preciso de algum equipamento?",
@@ -37,7 +37,7 @@ export function Faq() {
                 <AccordionItem key={index} value={`item-${index + 1}`}>
                     <AccordionTrigger className="text-lg text-left hover:no-underline font-semibold">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-base text-foreground/80">
-                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" || faq.question === "Preciso de algum equipamento?" || faq.question === "Como funciona o acesso ao material?" ? (
+                        {faq.question === "E se eu não gostar? Qual a garantia?" || faq.question === "O método é seguro para qualquer idade?" || faq.question === "Preciso de algum equipamento?" || faq.question === "Como funciona o acesso ao material?" || faq.question === "Em quanto tempo vejo os resultados?" ? (
                             <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                         ) : (
                             faq.answer
