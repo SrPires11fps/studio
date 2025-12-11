@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState, useEffect } from "react";
@@ -14,7 +15,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
 export function Pricing() {
@@ -71,33 +71,9 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <AlertDialog open={isSpecialOfferOpen} onOpenChange={setIsSpecialOfferOpen}>
-                <AlertDialogTrigger asChild>
-                  <Button className="w-full text-foreground/80" size="lg" variant="outline">Comprar Agora</Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent>
-                  <AlertDialogHeader>
-                    <AlertDialogTitle className="text-2xl font-headline text-center">Espere! Oferta Especial Para Você</AlertDialogTitle>
-                  </AlertDialogHeader>
-                  <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
-                    <p className="text-lg text-green-900">Leve o <strong>Plano Completo</strong> por apenas</p>
-                    <div className="text-4xl font-bold text-green-900 my-2">R$15</div>
-                    <p className="text-sm text-green-800">Método 2.0, suporte no WhatsApp, Bônus de Alimentação Anti-Inflamatória, e mais.</p>
-                  </div>
-                  <AlertDialogFooter className="sm:justify-center flex-col sm:flex-col sm:space-x-0">
-                    <AlertDialogAction asChild>
-                      <a href="https://pay.cakto.com.br/rf695av_661648">
-                        <TrendingUp className="mr-2" /> Sim, Quero Aproveitar o Desconto!
-                      </a>
-                    </AlertDialogAction>
-                    <AlertDialogCancel asChild>
-                      <a href="https://pay.cakto.com.br/33gfd89_661981">
-                        <Button variant="link" className="text-muted-foreground">Não, quero comprar o básico e perder a oferta.</Button>
-                      </a>
-                    </AlertDialogCancel>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
+              <Button className="w-full text-foreground/80" size="lg" variant="outline" asChild>
+                <a href="https://pay.cakto.com.br/33gfd89_661981">Comprar Agora</a>
+              </Button>
             </CardFooter>
           </Card>
           <Card className="border-2 border-primary flex flex-col relative shadow-2xl">
@@ -148,6 +124,33 @@ export function Pricing() {
         </div>
         <p className="text-center text-sm text-muted-foreground mt-8">Garantia incondicional de 7 dias. Seu risco é zero.</p>
       </div>
+      
+      {/* This AlertDialog is now controlled only by state, not by a trigger button. */}
+      <AlertDialog open={isSpecialOfferOpen} onOpenChange={setIsSpecialOfferOpen}>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle className="text-2xl font-headline text-center">Espere! Oferta Especial Para Você</AlertDialogTitle>
+            </AlertDialogHeader>
+            <div className="bg-green-100 border-2 border-dashed border-green-500 rounded-lg p-4 text-center">
+              <p className="text-lg text-green-900">Leve o <strong>Plano Completo</strong> por apenas</p>
+              <div className="text-4xl font-bold text-green-900 my-2">R$15</div>
+              <p className="text-sm text-green-800">Método 2.0, suporte no WhatsApp, Bônus de Alimentação Anti-Inflamatória, e mais.</p>
+            </div>
+            <AlertDialogFooter className="sm:justify-center flex-col sm:flex-col sm:space-x-0">
+              <AlertDialogAction asChild>
+                <a href="https://pay.cakto.com.br/rf695av_661648">
+                  <TrendingUp className="mr-2" /> Sim, Quero Aproveitar o Desconto!
+                </a>
+              </AlertDialogAction>
+              <AlertDialogCancel asChild>
+                <a href="https://pay.cakto.com.br/33gfd89_661981">
+                  <Button variant="link" className="text-muted-foreground">Não, quero comprar o básico e perder a oferta.</Button>
+                </a>
+              </AlertDialogCancel>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+      </AlertDialog>
     </section>
   );
 }
+
