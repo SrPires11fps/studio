@@ -21,7 +21,7 @@ const faqs = [
     },
     {
         question: "E se eu não gostar? Qual a garantia?",
-        answer: "Seu risco é zero! Oferecemos uma <strong class=\"font-semibold\">garantia incondicional de 7 dias</strong>. Se por qualquer motivo você não ficar satisfeito com o método, basta nos enviar um e-mail e devolveremos 100% do seu investimento."
+        answer: "Seu risco é zero! Oferecemos uma <strong class=\"font-semibold\">garantia incondicional de 7 dias</strong>. Se por qualquer motivo você não ficar satisfeito com o método, basta nos enviar um e-mail e <strong class=\"font-semibold\">devolveremos 100% do seu investimento</strong>."
     }
 ]
 
