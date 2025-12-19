@@ -74,7 +74,7 @@ export default function RootLayout({
                     setTimeout(function(){
                          l.href = urlBackRedirect;
                     }, 1);
-                });
+                }, { once: true });
               }
               
               setBackRedirect(link);
