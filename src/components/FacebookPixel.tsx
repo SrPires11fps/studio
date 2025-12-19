@@ -1,21 +1,16 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Script from "next/script";
 import { useEffect, useState } from "react";
 
 export function FacebookPixel() {
-  const [pixelLoaded, setPixelLoaded] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     // This effect ensures that the pixel is only initialized once
-    if (pixelLoaded) return;
-    
-    // Check if fbq is already defined to avoid re-initialization
     if (window.fbq) {
-        setPixelLoaded(true);
-        return;
+      window.fbq('track', 'PageView');
+      return;
     }
     
     !function(f,b,e,v,n,t,s)
@@ -29,15 +24,8 @@ export function FacebookPixel() {
 
     window.fbq('init', '1201401578841926');
     window.fbq('track', 'PageView');
-    setPixelLoaded(true);
     
-  }, [pixelLoaded]);
-
-  useEffect(() => {
-    // This effect tracks page views on navigation
-    if (!pixelLoaded) return;
-    window.fbq('track', 'PageView');
-  }, [pathname, pixelLoaded]);
+  }, [pathname]);
 
   return (
     <>
