@@ -59,24 +59,26 @@ export default function RootLayout({
         <Script id="back-redirect" strategy="afterInteractive">
           {`
             (function(w,d,l){
+              if (w.myBackRedirect) return;
+
               const link = 'https://destravamento-instantaneo.vercel.app/#oferta-especial';
+              
               function setBackRedirect(url) {
                 let urlBackRedirect = url;
                 urlBackRedirect = urlBackRedirect.trim() +
                   (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-                  document.location.search.replace('?', '').toString();
+                  d.location.search.replace('?', '').toString();
 
-                history.pushState({}, '', l.href);
-                history.pushState({}, '', l.href);
-                history.pushState({}, '', l.href);
-
-                w.addEventListener('popstate', () => {
-                  setTimeout(() => {
-                    l.href = urlBackRedirect;
-                  }, 1);
+                history.pushState(null, '', l.href);
+                w.addEventListener('popstate', function () {
+                    setTimeout(function(){
+                         l.href = urlBackRedirect;
+                    }, 1);
                 });
               }
+              
               setBackRedirect(link);
+              w.myBackRedirect = true;
             }(window,document,location));
           `}
         </Script>
