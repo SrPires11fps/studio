@@ -2,8 +2,15 @@ import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import Script from 'next/script';
-import Head from 'next/head';
 import React from 'react';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-poppins',
+});
+
 
 export const metadata: Metadata = {
   title: 'Método Destravamento Instantâneo',
@@ -19,12 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-      </Head>
+    <html lang="pt-BR" className={`${poppins.variable}`}>
       <body>
         <Script id="fb-pixel-base" strategy="afterInteractive">
           {`
