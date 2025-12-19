@@ -4,7 +4,6 @@ import './globals.css';
 import Script from 'next/script';
 import Head from 'next/head';
 import React from 'react';
-import { FacebookPixel } from '@/components/FacebookPixel';
 
 export const metadata: Metadata = {
   title: 'Método Destravamento Instantâneo',
@@ -38,9 +37,9 @@ export default function RootLayout({
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1201401578841926');
+            fbq('track', 'PageView');
           `}
         </Script>
-        <FacebookPixel />
         {children}
         <Toaster />
         <Script
