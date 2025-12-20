@@ -31,7 +31,6 @@ export default function RootLayout({
         
         {children}
         <Toaster />
-
         <Script
           id="fb-pixel"
           strategy="afterInteractive"
@@ -58,6 +57,16 @@ export default function RootLayout({
                 src="https://www.facebook.com/tr?id=1201401578841926&ev=PageView&noscript=1"
             />
         </noscript>
+        <Script id="utmify-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "6946d65085f20f4ee7658aca";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
       </body>
     </html>
   );
