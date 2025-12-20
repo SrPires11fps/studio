@@ -27,19 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${poppins.variable}`}>
-      <body>
-        
-        {children}
-        <Toaster />
-
-        <Script
-          id="utmify-utms"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="afterInteractive"
-        />
-        
+      <head>
         <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "6946d65085f20f4ee7658aca";
@@ -50,6 +38,19 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
+        <Script
+          id="utmify-utms"
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="afterInteractive"
+        />
+      </head>
+      <body>
+        
+        {children}
+        <Toaster />
+
       </body>
     </html>
   );
