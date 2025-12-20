@@ -1,14 +1,13 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export function ThirdPartyScripts() {
   const pathname = usePathname();
-  const isInitialLoad = useRef(true);
 
   useEffect(() => {
-    // Use a global flag to ensure the FB pixel is initialized only once
+    // Injeta o script e inicializa o fbq apenas uma vez
     if ((window as any).fbPixelInitialized) {
       return;
     }
@@ -26,19 +25,17 @@ export function ThirdPartyScripts() {
     `;
     document.head.appendChild(fbScript);
 
-    // This part runs after the script is appended.
-    // The script itself will initialize fbq.
-    // We can then safely use it.
-    const fbq = (window as any).fbq;
-    if (typeof fbq !== 'function') {
-        (window as any).fbq = function(...args: any[]) {
-            ((window as any).fbq.queue = (window as any).fbq.queue || []).push(args);
-        };
+    // Garante que fbq seja uma função válida mesmo antes de o script carregar
+    if (typeof (window as any).fbq !== 'function') {
+      const fbq = function(...args: any[]) {
+        ((window as any).fbq.queue = (window as any).fbq.queue || []).push(args);
+      };
+      (window as any).fbq = fbq;
     }
-    
+
     (window as any).fbq('init', '1201401578841926');
-    (window as any).fbq('track', 'PageView');
-    
+    (window as any).fbPixelInitialized = true;
+
     const fbNoscript = document.createElement('noscript');
     const img = document.createElement('img');
     img.height = 1;
@@ -48,18 +45,19 @@ export function ThirdPartyScripts() {
     fbNoscript.appendChild(img);
     document.body.appendChild(fbNoscript);
 
-    (window as any).fbPixelInitialized = true;
-
-  }, []); // Empty dependency array ensures this effect runs only once on mount
+  }, []); // Roda apenas uma vez no mount
 
   useEffect(() => {
-    // This effect tracks subsequent page views after the initial one.
-    if (!(window as any).fbPixelInitialized || isInitialLoad.current) {
-        isInitialLoad.current = false;
-        return;
-    }
-    (window as any).fbq('track', 'PageView');
-  }, [pathname]); // Reruns on route change
+    // Rastreia PageView no carregamento inicial e em cada mudança de rota
+    // Espera um pouco para garantir que o fbq foi inicializado pelo outro useEffect
+    const timer = setTimeout(() => {
+      if ((window as any).fbq) {
+        (window as any).fbq('track', 'PageView');
+      }
+    }, 50); // Pequeno delay para garantir a inicialização
 
-  return null; // This component doesn't render anything
+    return () => clearTimeout(timer);
+  }, [pathname]); // Roda no carregamento inicial e a cada mudança de pathname
+
+  return null; // Este componente não renderiza nada
 }
