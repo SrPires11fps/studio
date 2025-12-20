@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 
 export function ThirdPartyScripts() {
   const pathname = usePathname();
+  const isInitialLoad = useRef(true);
 
   useEffect(() => {
     // Use a global flag to ensure the FB pixel is initialized only once
@@ -53,9 +54,9 @@ export function ThirdPartyScripts() {
 
   useEffect(() => {
     // This effect tracks subsequent page views after the initial one.
-    // It depends on fbPixelInitialized to ensure fbq is available.
-    if (!(window as any).fbPixelInitialized) {
-      return;
+    if (!(window as any).fbPixelInitialized || isInitialLoad.current) {
+        isInitialLoad.current = false;
+        return;
     }
     (window as any).fbq('track', 'PageView');
   }, [pathname]); // Reruns on route change
