@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${poppins.variable}`}>
       <head>
-        <Script id="utmify-pixel" strategy="afterInteractive">
+        <Script id="utmify-pixel-script" strategy="afterInteractive">
           {`
             window.pixelId = "6946d65085f20f4ee7658aca";
             var a = document.createElement("script");
@@ -39,7 +39,7 @@ export default function RootLayout({
           `}
         </Script>
         <Script
-          id="utmify-utms"
+          id="utmify-utm-script"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
