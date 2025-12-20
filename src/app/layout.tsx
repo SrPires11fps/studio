@@ -54,6 +54,13 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1201401578841926&ev=PageView&noscript=1"
             />
         </noscript>
+        <Script 
+          id="utmify-script"
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          strategy="lazyOnload"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+        />
         
         {children}
         <Toaster />
