@@ -1,15 +1,14 @@
 'use client';
 
 import { useEffect } from 'react';
-import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 
 export function ThirdPartyScripts() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // This is to avoid triggering the pixel multiple times in development.
-    if (process.env.NODE_ENV === 'development' && (window as any).fbq) {
+    // Use a global flag to ensure the FB pixel is initialized only once
+    if ((window as any).fbPixelInitialized) {
       return;
     }
 
@@ -26,6 +25,19 @@ export function ThirdPartyScripts() {
     `;
     document.head.appendChild(fbScript);
 
+    // This part runs after the script is appended.
+    // The script itself will initialize fbq.
+    // We can then safely use it.
+    const fbq = (window as any).fbq;
+    if (typeof fbq !== 'function') {
+        (window as any).fbq = function(...args: any[]) {
+            ((window as any).fbq.queue = (window as any).fbq.queue || []).push(args);
+        };
+    }
+    
+    (window as any).fbq('init', '1201401578841926');
+    (window as any).fbq('track', 'PageView');
+    
     const fbNoscript = document.createElement('noscript');
     const img = document.createElement('img');
     img.height = 1;
@@ -35,27 +47,18 @@ export function ThirdPartyScripts() {
     fbNoscript.appendChild(img);
     document.body.appendChild(fbNoscript);
 
-    const fbq = (window as any).fbq;
-    if (fbq) {
-      fbq('init', '1201401578841926');
-      fbq('track', 'PageView');
-    }
-  }, []);
+    (window as any).fbPixelInitialized = true;
+
+  }, []); // Empty dependency array ensures this effect runs only once on mount
 
   useEffect(() => {
-    if ((window as any).fbq) {
-      (window as any).fbq('track', 'PageView');
+    // This effect tracks subsequent page views after the initial one.
+    // It depends on fbPixelInitialized to ensure fbq is available.
+    if (!(window as any).fbPixelInitialized) {
+      return;
     }
-  }, [pathname]);
+    (window as any).fbq('track', 'PageView');
+  }, [pathname]); // Reruns on route change
 
-  return (
-    <>
-      <Script
-        id="utmify-script"
-        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-        data-utmify-prevent-subids
-        strategy="afterInteractive"
-      />
-    </>
-  );
+  return null; // This component doesn't render anything
 }
