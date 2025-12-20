@@ -28,29 +28,41 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${poppins.variable}`}>
       <head>
-        <Script id="utmify-pixel-script" strategy="afterInteractive">
-          {`
-            window.pixelId = "6946d65085f20f4ee7658aca";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            document.head.appendChild(a);
-          `}
-        </Script>
-        <Script
-          id="utmify-utm-script"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="afterInteractive"
-        />
       </head>
       <body>
         
         {children}
         <Toaster />
 
+        <script
+          id="utmify-loader"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (document.getElementById('utmify-pixel-script')) return;
+                
+                window.pixelId = "6946d65085f20f4ee7658aca";
+                var pixelScript = document.createElement("script");
+                pixelScript.id = "utmify-pixel-script";
+                pixelScript.async = true;
+                pixelScript.defer = true;
+                pixelScript.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+                document.head.appendChild(pixelScript);
+
+                if (document.getElementById('utmify-utm-script')) return;
+
+                var utmScript = document.createElement("script");
+                utmScript.id = "utmify-utm-script";
+                utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+                utmScript.setAttribute('data-utmify-prevent-xcod-sck', '');
+                utmScript.setAttribute('data-utmify-prevent-subids', '');
+                utmScript.async = true;
+                utmScript.defer = true;
+                document.head.appendChild(utmScript);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
