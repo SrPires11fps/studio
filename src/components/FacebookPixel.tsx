@@ -2,24 +2,24 @@
 
 import { usePathname } from 'next/navigation';
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const FacebookPixel = () => {
   const pathname = usePathname();
-  const [pixelLoaded, setPixelLoaded] = useState(false);
 
   useEffect(() => {
-    if (pixelLoaded) {
+    // A função `fbq` é inicializada pelo script do Facebook.
+    // Verificamos se ela existe antes de usá-la.
+    if (window.fbq) {
       window.fbq('track', 'PageView');
     }
-  }, [pathname, pixelLoaded]);
+  }, [pathname]); // Dispara em cada mudança de rota
 
   return (
     <>
       <Script
-        id="fb-pixel"
+        id="fb-pixel-script"
         strategy="afterInteractive"
-        onLoad={() => setPixelLoaded(true)}
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
@@ -31,6 +31,7 @@ const FacebookPixel = () => {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1201401578841926');
+            fbq('track', 'PageView');
           `,
         }}
       />
