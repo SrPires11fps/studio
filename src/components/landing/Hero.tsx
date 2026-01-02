@@ -12,7 +12,7 @@ export function Hero() {
         <div className="space-y-6">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-foreground">
-              Diga Adeus à Dor nas <br /> Costas para Sempre
+              Conheça o método mais rápido e eficaz para dizer adeus à dor nas costas para sempre.
             </h1>
           </div>
           {heroImage && (
