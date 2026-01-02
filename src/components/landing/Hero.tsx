@@ -28,7 +28,7 @@ export function Hero() {
             </div>
            )}
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-            Você vai ter acesso a um método passo a passo que já ajudou milhares de Brasileiros a se livrarem da dor nas costas de forma rápida, segura e no conforto de casa
+            Você vai ter acesso a um método passo a passo que já ajudou milhares de brasileiros a se livrarem da dor nas costas de forma rápida, segura e no conforto de casa
           </p>
         </div>
         <div className="mt-8">
