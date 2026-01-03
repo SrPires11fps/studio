@@ -43,7 +43,7 @@ const bonuses = [
         description: "Aprenda a relaxar os músculos e a mente para ter uma noite de sono mais tranquila e reparadora.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-8')
     },
-]
+].map(bonus => ({ ...bonus, description: '' }))
 
 export function Bonus() {
     return (
@@ -63,7 +63,7 @@ export function Bonus() {
                     {bonuses.map((bonus) => (
                         <div key={bonus.title} className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105">
                             {bonus.image && (
-                                <div className="w-full max-w-32 sm:max-w-48 aspect-square relative mb-4">
+                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
                                     <Image
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title.replace(/<br \/>/g, ' ')}
@@ -74,7 +74,7 @@ export function Bonus() {
                                 </div>
                             )}
                             <h3 className="text-lg font-bold mb-1" dangerouslySetInnerHTML={{ __html: bonus.title }}></h3>
-                            <p className="text-sm text-foreground/80">{bonus.description}</p>
+                            {bonus.description && <p className="text-sm text-foreground/80">{bonus.description}</p>}
                         </div>
                     ))}
                 </div>
