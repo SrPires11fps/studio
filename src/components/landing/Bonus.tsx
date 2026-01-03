@@ -66,7 +66,7 @@ export function Bonus() {
                             key={bonus.title} 
                             className={cn(
                                 "flex flex-col items-center text-center p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105",
-                                index === 0 ? "bg-[#F8F6EC]" : "bg-card"
+                                index === 0 ? "bg-[#fffae5]" : "bg-card"
                             )}
                         >
                             {bonus.image && (
