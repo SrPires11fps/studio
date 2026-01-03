@@ -1,6 +1,7 @@
 import { Gift } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from "@/lib/utils";
 
 const bonuses = [
     {
@@ -60,8 +61,14 @@ export function Bonus() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {bonuses.map((bonus) => (
-                        <div key={bonus.title} className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105">
+                    {bonuses.map((bonus, index) => (
+                        <div 
+                            key={bonus.title} 
+                            className={cn(
+                                "flex flex-col items-center text-center p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105",
+                                index === 0 ? "bg-[#FBF9F1]" : "bg-card"
+                            )}
+                        >
                             {bonus.image && (
                                 <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
                                     <Image
