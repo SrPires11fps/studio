@@ -29,7 +29,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-5')
     },
     {
-        title: "Bônus #6: Grupo VIP",
+        title: "Bônus #6: Guia de Posturas Inteligentes no Dia a Dia",
         description: "Acesso à nossa comunidade exclusiva de alunos para tirar dúvidas e compartilhar resultados.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-6')
     },
