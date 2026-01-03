@@ -9,7 +9,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-1')
     },
     {
-        title: "Bônus #2: Rotina Matinal",
+        title: "Bônus #2: Protocolo Anti-Rigidez Para Quem Fica Muito Tempo Sentado",
         description: "Uma rotina de 5 minutos para começar o dia com mais flexibilidade e menos dor.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
