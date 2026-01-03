@@ -64,10 +64,7 @@ export function Bonus() {
                     {bonuses.map((bonus, index) => (
                         <div 
                             key={bonus.title} 
-                            className={cn(
-                                "flex flex-col items-center text-center p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105",
-                                index === 0 ? "bg-[#fffae5]" : "bg-card"
-                            )}
+                            className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
                         >
                             {bonus.image && (
                                 <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
