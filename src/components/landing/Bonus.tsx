@@ -34,7 +34,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-6')
     },
     {
-        title: "Bônus #7: Relaxamento Profundo",
+        title: "Bônus #7: Manual da Alimentação Anti-Inflamatória",
         description: "Técnicas de respiração e relaxamento para aliviar a tensão muscular instantaneamente.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-7')
     },
