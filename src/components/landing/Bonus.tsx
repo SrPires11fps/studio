@@ -48,7 +48,7 @@ const bonuses = [
 
 export function Bonus() {
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
             <div className="container px-4 md:px-6">
                 <div className="space-y-4 text-center mb-12">
                     <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
@@ -64,7 +64,9 @@ export function Bonus() {
                     {bonuses.map((bonus, index) => (
                         <div 
                             key={bonus.title} 
-                            className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
+                            className={cn(
+                                "flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
+                            )}
                         >
                             {bonus.image && (
                                 <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
