@@ -24,7 +24,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-4')
     },
     {
-        title: "Bônus #5: Postura de Aço",
+        title: "Bônus #5: Protocolo Anti-Volta da Dor",
         description: "Exercícios para fortalecer sua postura e evitar que a dor volte no futuro.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-5')
     },
