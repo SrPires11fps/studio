@@ -19,7 +19,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-3')
     },
     {
-        title: "Bônus #4: Alívio Superior Parte 2 - Fim da Dor nos Ombros e Pescoço",
+        title: "Bônus #4: Alívio Superior (Parte 2)<br />Fim da Dor nos Ombros e Pescoço",
         description: "Um desafio guiado para você sentir uma transformação incrível em apenas uma semana.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-4')
     },
@@ -66,14 +66,14 @@ export function Bonus() {
                                 <div className="w-full max-w-48 aspect-square relative mb-4">
                                     <Image
                                         src={bonus.image.imageUrl}
-                                        alt={bonus.title}
+                                        alt={bonus.title.replace(/<br \/>/g, ' ')}
                                         fill
                                         className="rounded-md object-cover"
                                         data-ai-hint={bonus.image.imageHint}
                                     />
                                 </div>
                             )}
-                            <h3 className="text-lg font-bold mb-1">{bonus.title}</h3>
+                            <h3 className="text-lg font-bold mb-1" dangerouslySetInnerHTML={{ __html: bonus.title }}></h3>
                             <p className="text-sm text-foreground/80">{bonus.description}</p>
                         </div>
                     ))}
