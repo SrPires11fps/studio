@@ -21,7 +21,7 @@ export function Hero() {
                     alt="Woman with back pain."
                     className="rounded-xl object-contain w-full max-w-xs sm:max-w-md"
                     height="400"
-                    src="https://i.imgur.com/VHj2DNA.png"
+                    src="https://i.imgur.com/g5GT07w.png"
                     width="600"
                     data-ai-hint="woman back pain"
                 />
