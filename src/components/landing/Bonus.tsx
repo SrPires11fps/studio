@@ -39,8 +39,8 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-7')
     },
     {
-        title: "Bônus #8: Guia de Viagem",
-        description: "Dicas para manter sua coluna saudável e sem dor durante viagens longas.",
+        title: "Bônus #8: Protocolo de Relaxamento Antes de Dormir",
+        description: "Aprenda a relaxar os músculos e a mente para ter uma noite de sono mais tranquila e reparadora.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-8')
     },
 ]
