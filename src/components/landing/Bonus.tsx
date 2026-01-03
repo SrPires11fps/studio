@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const bonuses = [
     {
-        title: "Bônus #1: Destrave de Quadris, Joelhos e Tornozelos",
+        title: "Bônus #1: Método Anti-Dor nos Quadris, Joelhos e Tornozelos",
         description: "Um guia completo com alimentos que ajudam a desinflamar seu corpo e acelerar a recuperação.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-1')
     },
