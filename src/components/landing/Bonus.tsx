@@ -63,7 +63,7 @@ export function Bonus() {
                     {bonuses.map((bonus) => (
                         <div key={bonus.title} className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105">
                             {bonus.image && (
-                                <div className="w-full aspect-square relative mb-4">
+                                <div className="w-full max-w-48 aspect-square relative mb-4">
                                     <Image
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title}
