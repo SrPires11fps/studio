@@ -19,7 +19,7 @@ export function Hero() {
             <div className="flex justify-center">
                 <Image
                     alt={heroImage.description}
-                    className="rounded-xl object-cover shadow-2xl w-full max-w-xs sm:max-w-md"
+                    className="rounded-xl object-contain shadow-2xl w-full max-w-xs sm:max-w-sm"
                     height="400"
                     src={heroImage.imageUrl}
                     width="600"
