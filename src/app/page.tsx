@@ -4,6 +4,7 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Material } from "@/components/landing/Material";
+import { Bonus } from "@/components/landing/Bonus";
 import { Pain } from "@/components/landing/Pain";
 import { Pricing } from "@/components/landing/Pricing";
 import { Testimonials } from "@/components/landing/Testimonials";
@@ -17,6 +18,7 @@ export default function Home() {
         <Pain />
         <Benefits />
         <Material />
+        <Bonus />
         <Pricing />
         <Testimonials />
         <Faq />

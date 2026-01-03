@@ -53,6 +53,54 @@
       "description": "Avatar for the fourth testimonial.",
       "imageUrl": "https://i.imgur.com/seMMVSQ.jpeg",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "bonus-1",
+      "description": "Mockup for Nutrition Guide bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1760443728294-81b19787ec4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-2",
+      "description": "Mockup for Morning Routine bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1643913398973-f8e24bf6d1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-3",
+      "description": "Mockup for Sleep Guide bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1621944190310-e3cca1564bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-4",
+      "description": "Mockup for 7-Day Challenge bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1643913398973-f8e24bf6d1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-5",
+      "description": "Mockup for Strong Posture bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1733945711023-bb707111c16a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-6",
+      "description": "Mockup for VIP Group bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1760443728294-81b19787ec4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-7",
+      "description": "Mockup for Deep Relaxation bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1621944190310-e3cca1564bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    },
+    {
+      "id": "bonus-8",
+      "description": "Mockup for Travel Guide bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1643913398973-f8e24bf6d1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2NzM1NzM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
     }
   ]
 }
