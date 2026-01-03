@@ -14,7 +14,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
     {
-        title: "Bônus #3: Guia do Sono",
+        title: "Bônus #3: Alívio Superior: Fim da Dor nos Ombros e Pescoço",
         description: "Aprenda as melhores posições e truques para ter uma noite de sono reparadora.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-3')
     },
