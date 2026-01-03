@@ -15,18 +15,18 @@ export function Hero() {
               Conheça o método mais rápido e eficaz para dizer adeus à dor nas costas para sempre.
             </h1>
           </div>
-          {heroImage && (
+          
             <div className="flex justify-center">
                 <Image
-                    alt={heroImage.description}
-                    className="rounded-xl object-contain shadow-2xl w-full max-w-xs sm:max-w-sm"
+                    alt="Woman with back pain."
+                    className="rounded-xl object-contain w-full max-w-xs sm:max-w-md"
                     height="400"
-                    src={heroImage.imageUrl}
+                    src="https://i.imgur.com/VHj2DNA.png"
                     width="600"
-                    data-ai-hint={heroImage.imageHint}
+                    data-ai-hint="woman back pain"
                 />
             </div>
-           )}
+           
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
             Você vai ter acesso a um método passo a passo que já ajudou milhares de brasileiros a se livrarem da dor nas costas de forma rápida, segura e no conforto de casa
           </p>
