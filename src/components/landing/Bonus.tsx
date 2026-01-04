@@ -60,12 +60,12 @@ export function Bonus() {
                         Comprando hoje, você garante acesso imediato a todos estes materiais extras para acelerar seus resultados.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     {bonuses.map((bonus, index) => (
                         <div 
                             key={bonus.title} 
                             className={cn(
-                                "flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
+                                "flex flex-col items-center text-center px-4 pt-4 pb-2 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
                             )}
                         >
                             {bonus.image && (
