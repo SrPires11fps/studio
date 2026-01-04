@@ -20,7 +20,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-3')
     },
     {
-        title: "Bônus #4: Alívio Superior (Parte 2):<br />Fim da Dor nos Ombros e Pescoço",
+        title: "Bônus #4: Alívio Superior:<br />Mãos e Braços",
         description: "Um desafio guiado para você sentir uma transformação incrível em apenas uma semana.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-4')
     },
