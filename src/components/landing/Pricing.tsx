@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckIcon, BadgePercent, TrendingUp } from "lucide-react";
+import { CheckIcon, BadgePercent, TrendingUp, Gift } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import {
   AlertDialog,
@@ -113,8 +113,36 @@ export function Pricing() {
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckIcon className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span><strong className="font-semibold">Bônus:</strong> Guia de Nutrição Anti-inflamatória</span>
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #1:</strong> Guia de Nutrição Anti-inflamatória</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #2:</strong> Protocolo Anti-Rigidez</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #3:</strong> Alívio Superior Ombros e Pescoço</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #4:</strong> Alívio Superior (Parte 2)</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #5:</strong> Protocolo Anti-Volta da Dor</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #6:</strong> Guia de Posturas Inteligentes</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #7:</strong> Manual da Alimentação Anti-Inflamatória</span>
+                </li>
+                 <li className="flex items-start gap-2">
+                  <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
+                  <span><strong className="font-semibold">Bônus #8:</strong> Protocolo de Relaxamento</span>
                 </li>
               </ul>
             </CardContent>
@@ -156,3 +184,4 @@ export function Pricing() {
   );
 }
 
+    
