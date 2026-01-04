@@ -58,7 +58,7 @@ export function Benefits() {
             O <strong className="font-semibold">Método Destravamento Instantâneo</strong> vai trazer estes benefícios na sua vida:
           </p>
         </div>
-        <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+        <div className="mx-auto grid items-start gap-4 sm:max-w-4xl sm:grid-cols-2 md:gap-6 lg:max-w-5xl lg:grid-cols-3">
             {benefits.map((benefit, index) => (
                 <div key={benefit.title} className="flex flex-col items-center text-center p-6 rounded-lg bg-card shadow-lg">
                     {benefit.image ? (
