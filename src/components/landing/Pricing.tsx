@@ -118,7 +118,7 @@ export function Pricing() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span><strong className="font-semibold">Bônus #2:</strong> Protocolo Anti-Rigidez</span>
+                  <span><strong className="font-semibold">Bônus #2:</strong> Protocolo Para Quem Fica Muito Tempo Sentado</span>
                 </li>
                  <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
