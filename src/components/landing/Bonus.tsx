@@ -53,14 +53,14 @@ export function Bonus() {
                 <div className="space-y-4 text-center mb-12">
                     <div className="inline-block rounded-lg bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
                         <Gift className="inline-block mr-2 h-4 w-4" />
-                        Oferta Exclusiva
+                        Bônus Exclusivos
                     </div>
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Você Também Levará 8 Bônus Exclusivos</h2>
                     <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
                         Comprando hoje, você garante acesso imediato a todos estes materiais extras para acelerar seus resultados.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {bonuses.map((bonus, index) => (
                         <div 
                             key={bonus.title} 
