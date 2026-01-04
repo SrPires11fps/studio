@@ -134,7 +134,7 @@ export function Pricing() {
                 </li>
                  <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span><strong className="font-semibold">Bônus #6:</strong> Guia de Posturas Inteligentes</span>
+                  <span><strong className="font-semibold">Bônus #6:</strong> Guia Completo de Postura</span>
                 </li>
                  <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />

@@ -30,7 +30,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-5')
     },
     {
-        title: "Bônus #6: Guia de Posturas Inteligentes no Dia a Dia",
+        title: "Bônus #6: Guia Completo de Postura",
         description: "Acesso à nossa comunidade exclusiva de alunos para tirar dúvidas e compartilhar resultados.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-6')
     },
@@ -74,7 +74,7 @@ export function Bonus() {
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title.replace(/<br \/>/g, ' ')}
                                         fill
-                                        className={cn("rounded-md", index === 0 ? "object-cover" : "object-contain")}
+                                        className={cn("rounded-md", index > 0 ? "object-contain" : "object-cover")}
                                         data-ai-hint={bonus.image.imageHint}
                                     />
                                 </div>
