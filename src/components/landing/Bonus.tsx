@@ -65,7 +65,7 @@ export function Bonus() {
                         <div 
                             key={bonus.title} 
                             className={cn(
-                                "flex flex-col items-center text-center px-4 pt-4 pb-2 rounded-lg bg-card shadow-lg transition-transform transform hover:scale-105"
+                                "flex flex-col items-center text-center px-4 pt-4 pb-2 rounded-lg bg-card shadow-lg"
                             )}
                         >
                             {bonus.image && (
