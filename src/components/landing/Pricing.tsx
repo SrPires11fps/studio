@@ -114,7 +114,7 @@ export function Pricing() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
-                  <span><strong className="font-semibold">Bônus #1:</strong> Guia de Nutrição Anti-inflamatória</span>
+                  <span><strong className="font-semibold">Bônus #1:</strong> Método Anti-Dor nos Quadris, Joelhos e Tornozelos</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Gift className="h-5 w-5 flex-shrink-0 text-primary" />
@@ -183,5 +183,3 @@ export function Pricing() {
     </section>
   );
 }
-
-    

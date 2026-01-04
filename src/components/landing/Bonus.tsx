@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const bonuses = [
     {
         title: "Bônus #1: Método Anti-Dor nos Quadris, Joelhos e Tornozelos",
-        description: "Um guia completo com alimentos que ajudam a desinflamar seu corpo e acelerar a recuperação.",
+        description: "",
         image: PlaceHolderImages.find(p => p.id === 'bonus-1')
     },
     {
