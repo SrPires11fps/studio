@@ -74,7 +74,7 @@ export function Bonus() {
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title.replace(/<br \/>/g, ' ')}
                                         fill
-                                        className="rounded-md object-contain"
+                                        className={cn("rounded-md", index === 0 ? "object-cover" : "object-contain")}
                                         data-ai-hint={bonus.image.imageHint}
                                     />
                                 </div>
