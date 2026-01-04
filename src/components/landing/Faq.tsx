@@ -9,7 +9,7 @@ const faqs = [
     },
     {
         question: "Em quanto tempo vejo os resultados?",
-        answer: "Muitos de nossos clientes relatam <strong class=\"font-semibold\">alívio significativo já nas primeiras semanas</strong>. Os resultados variam de pessoa para pessoa, mas a consistência na prática dos exercícios é fundamental para um alívio rápido e duradouro."
+        answer: "Muitos de nossos clientes relatam <strong class=\"font-semibold\">alívio significativo já nas primeiras 2 semanas</strong>. Os resultados variam de pessoa para pessoa, mas a consistência na prática dos exercícios é fundamental para um alívio rápido e duradouro."
     },
     {
         question: "Preciso de algum equipamento?",
