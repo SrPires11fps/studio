@@ -69,7 +69,7 @@ export function Bonus() {
                             )}
                         >
                             {bonus.image && (
-                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
+                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-2">
                                     <Image
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title.replace(/<br \/>/g, ' ')}
