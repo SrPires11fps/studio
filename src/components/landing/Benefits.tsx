@@ -50,7 +50,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#faf8f1' }}>
+    <section id="beneficios" className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#faf8f1' }}>
       <div className="container px-4 md:px-6">
         <div className="space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Transformação que Você Merece</h2>
@@ -58,7 +58,7 @@ export function Benefits() {
             O <strong className="font-semibold">Método Destravamento Instantâneo</strong> vai trazer estes benefícios na sua vida:
           </p>
         </div>
-        <div className="mx-auto grid items-start gap-4 sm:max-w-4xl sm:grid-cols-2 md:gap-6 lg:max-w-5xl lg:grid-cols-3">
+        <div className="mx-auto grid items-start gap-3 sm:max-w-4xl sm:grid-cols-2 md:gap-3 lg:max-w-5xl lg:grid-cols-3">
             {benefits.map((benefit, index) => (
                 <div key={benefit.title} className="flex flex-col items-center text-center p-6 rounded-lg bg-card shadow-lg">
                     {benefit.image ? (

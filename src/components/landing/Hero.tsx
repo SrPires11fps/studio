@@ -32,7 +32,7 @@ export function Hero() {
           </p>
         </div>
         <div className="mt-8">
-            <SmoothLink href="#precos">
+            <SmoothLink href="#beneficios">
                 <Button size="lg" className="text-primary-foreground text-base">
                     Quero aliviar minha dor agora
                 </Button>
