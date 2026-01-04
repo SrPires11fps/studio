@@ -48,7 +48,7 @@ const bonuses = [
 
 export function Bonus() {
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
+        <section id="bonus" className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
             <div className="container px-4 md:px-6">
                 <div className="space-y-4 text-center mb-12">
                     <div className="inline-block rounded-lg bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
