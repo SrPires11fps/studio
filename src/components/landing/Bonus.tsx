@@ -51,7 +51,7 @@ export function Bonus() {
         <section className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
             <div className="container px-4 md:px-6">
                 <div className="space-y-4 text-center mb-12">
-                    <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                    <div className="inline-block rounded-lg bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
                         <Gift className="inline-block mr-2 h-4 w-4" />
                         Oferta Exclusiva
                     </div>
