@@ -40,7 +40,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-7')
     },
     {
-        title: "Bônus #8: Protocolo de Relaxamento Antes de Dormir",
+        title: "Bônus #8: Protocolo de Relaxamento para Sono Rápido",
         description: "Aprenda a relaxar os músculos e a mente para ter uma noite de sono mais tranquila e reparadora.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-8')
     },
