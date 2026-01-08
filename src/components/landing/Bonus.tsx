@@ -7,7 +7,11 @@ const bonuses = [
     {
         title: "Bônus #1: Método Anti-Dor nos Quadris, Joelhos e Tornozelos",
         description: "Alinhe seu corpo dos pés à cabeça, eliminando dores que se originam em outras partes e afetam suas costas.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-1')
+        image: {
+            id: 'bonus-1',
+            imageUrl: "https://i.imgur.com/9gRHeBO.png",
+            imageHint: "ebook cover"
+        }
     },
     {
         title: "Bônus #2: Protocolo Anti-Rigidez Para Quem Fica Muito Tempo Sentado",
@@ -76,7 +80,7 @@ export function Bonus() {
                                         <p className="text-red-500 line-through">DE: R$47</p>
                                         <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
                                     </div>
-                                    <p className="text-sm text-foreground/80 mt-2 flex-grow">{bonus.description}</p>
+                                    <p className="text-sm text-foreground/80 mt-2 flex-grow pb-2">{bonus.description}</p>
                                 </div>
                             </div>
                         </div>
