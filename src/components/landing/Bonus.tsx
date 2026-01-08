@@ -1,4 +1,4 @@
-import { Gift } from "lucide-react";
+import { Gift, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from "@/lib/utils";
@@ -6,83 +6,107 @@ import { cn } from "@/lib/utils";
 const bonuses = [
     {
         title: "Bônus #1: Método Anti-Dor nos Quadris, Joelhos e Tornozelos",
-        description: "",
+        description: "Alinhe seu corpo dos pés à cabeça, eliminando dores que se originam em outras partes e afetam suas costas.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-1')
     },
     {
         title: "Bônus #2: Protocolo Anti-Rigidez Para Quem Fica Muito Tempo Sentado",
-        description: "Uma rotina de 5 minutos para começar o dia com mais flexibilidade e menos dor.",
+        description: "Uma rotina de 5 minutos para fazer pausas durante o dia, destravando o corpo e aumentando sua energia.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
     {
-        title: "Bônus #3: Alívio Superior:<br />Ombros e Pescoço",
-        description: "Aprenda as melhores posições e truques para ter uma noite de sono reparadora.",
+        title: "Bônus #3: Alívio Superior: Ombros e Pescoço",
+        description: "Relaxe a tensão acumulada nos ombros e pescoço, que muitas vezes é a causa de dores de cabeça e desconforto.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-3')
     },
+];
+
+const remainingBonuses = [
     {
-        title: "Bônus #4: Alívio Superior:<br />Mãos e Braços",
-        description: "Um desafio guiado para você sentir uma transformação incrível em apenas uma semana.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-4')
+        title: "Alívio Superior: Mãos e Braços",
     },
     {
-        title: "Bônus #5: Protocolo Anti-Volta da Dor",
-        description: "Exercícios para fortalecer sua postura e evitar que a dor volte no futuro.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-5')
+        title: "Protocolo Anti-Volta da Dor",
     },
     {
-        title: "Bônus #6: Guia Completo de Postura",
-        description: "Acesso à nossa comunidade exclusiva de alunos para tirar dúvidas e compartilhar resultados.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-6')
+        title: "Guia Completo de Postura",
     },
     {
-        title: "Bônus #7: Manual da Alimentação Anti-Inflamatória",
-        description: "Técnicas de respiração e relaxamento para aliviar a tensão muscular instantaneamente.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-7')
+        title: "Manual da Alimentação Anti-Inflamatória",
     },
     {
-        title: "Bônus #8: Protocolo de Relaxamento para Sono Rápido",
-        description: "Aprenda a relaxar os músculos e a mente para ter uma noite de sono mais tranquila e reparadora.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-8')
+        title: "Protocolo de Relaxamento para Sono Rápido",
     },
-].map(bonus => ({ ...bonus, description: '' }))
+]
+
 
 export function Bonus() {
     return (
         <section id="bonus" className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
-            <div className="container px-4 md:px-6">
-                <div className="space-y-4 text-center mb-12">
-                    <div className="inline-block rounded-lg bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
-                        <Gift className="inline-block mr-2 h-4 w-4" />
-                        Bônus Exclusivos
-                    </div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Você Também Levará 8 Bônus Exclusivos</h2>
-                    <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-                        Comprando hoje, você garante acesso imediato a todos estes materiais extras para acelerar seus resultados.
+             <div className="container px-4 md:px-6">
+                <div className="w-full bg-black text-white text-center py-4 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-wider">👀 ANTES DE VOCÊ CONTINUAR...</h2>
+                </div>
+                <div className="text-center mb-12">
+                     <p className="mx-auto max-w-[700px] text-foreground/90 text-xl md:text-2xl font-medium">
+                        ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
                     {bonuses.map((bonus, index) => (
-                        <div 
-                            key={bonus.title} 
-                            className={cn(
-                                "flex flex-col items-center text-center px-4 pt-4 pb-2 rounded-lg bg-card shadow-lg"
-                            )}
-                        >
-                            <h3 className="text-lg font-bold mb-2" dangerouslySetInnerHTML={{ __html: bonus.title }}></h3>
-                            {bonus.image && (
-                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative">
-                                    <Image
-                                        src={bonus.image.imageUrl}
-                                        alt={bonus.title.replace(/<br \/>/g, ' ')}
-                                        fill
-                                        className={cn("rounded-md", index > 0 ? "object-contain" : "object-cover")}
-                                        data-ai-hint={bonus.image.imageHint}
-                                    />
+                        <div key={bonus.title} className="flex flex-col items-center text-center">
+                            <div className="w-full max-w-xs mx-auto">
+                                <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
+                                    🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                            )}
-                            {bonus.description && <p className="text-sm text-foreground/80 mt-2">{bonus.description}</p>}
+                                <div className="bg-card shadow-lg rounded-b-lg p-4 flex flex-col items-center h-full">
+                                    <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
+                                    {bonus.image && (
+                                        <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
+                                            <Image
+                                                src={bonus.image.imageUrl}
+                                                alt={bonus.title.replace(/<br \/>/g, ' ')}
+                                                fill
+                                                className="object-contain rounded-md"
+                                                data-ai-hint={bonus.image.imageHint}
+                                            />
+                                        </div>
+                                    )}
+                                    <div className="text-center my-2">
+                                        <p className="text-red-500 line-through">DE: R$47</p>
+                                        <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
+                                    </div>
+                                    <p className="text-sm text-foreground/80 mt-2 flex-grow">{bonus.description}</p>
+                                </div>
+                            </div>
                         </div>
                     ))}
+                     <div className="flex flex-col items-center text-center">
+                        <div className="w-full max-w-xs mx-auto">
+                            <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
+                                🎁 +5 BÔNUS 🎁
+                            </div>
+                            <div className="bg-card shadow-lg rounded-b-lg p-4 flex flex-col items-center h-full">
+                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
+                                     <Image
+                                        src="https://i.imgur.com/TPJIuNJ.png"
+                                        alt="+5 Bônus"
+                                        fill
+                                        className="object-contain rounded-md"
+                                        data-ai-hint="ebook cover stack"
+                                    />
+                                </div>
+                                <ul className="text-left space-y-2 text-sm">
+                                    {remainingBonuses.map(rb => (
+                                        <li key={rb.title} className="flex items-start gap-2">
+                                            <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                                            <span>{rb.title}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
