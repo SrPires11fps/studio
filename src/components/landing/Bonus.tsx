@@ -68,8 +68,9 @@ export function Bonus() {
                                 "flex flex-col items-center text-center px-4 pt-4 pb-2 rounded-lg bg-card shadow-lg"
                             )}
                         >
+                            <h3 className="text-lg font-bold mb-2" dangerouslySetInnerHTML={{ __html: bonus.title }}></h3>
                             {bonus.image && (
-                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-2">
+                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative">
                                     <Image
                                         src={bonus.image.imageUrl}
                                         alt={bonus.title.replace(/<br \/>/g, ' ')}
@@ -79,8 +80,7 @@ export function Bonus() {
                                     />
                                 </div>
                             )}
-                            <h3 className="text-lg font-bold mb-1" dangerouslySetInnerHTML={{ __html: bonus.title }}></h3>
-                            {bonus.description && <p className="text-sm text-foreground/80">{bonus.description}</p>}
+                            {bonus.description && <p className="text-sm text-foreground/80 mt-2">{bonus.description}</p>}
                         </div>
                     ))}
                 </div>
