@@ -94,8 +94,8 @@ export function Bonus() {
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
                             </div>
-                            <div className="bg-card shadow-lg rounded-b-lg p-6 pt-2 flex flex-col items-center h-full">
-                                <div className="w-full max-w-80 sm:max-w-80 aspect-square relative mb-2">
+                            <div className="bg-card shadow-lg rounded-b-lg p-6 pt-2 pb-4 flex flex-col items-center h-full">
+                                <div className="w-full max-w-80 sm:max-w-80 aspect-square relative">
                                      <Image
                                         src="https://i.imgur.com/WugjC0H.png"
                                         alt="+5 Bônus"
@@ -104,7 +104,7 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
-                                <ul className="text-left space-y-2 text-sm">
+                                <ul className="text-left space-y-2 text-sm mt-2">
                                     {remainingBonuses.map(rb => (
                                         <li key={rb.title} className="flex items-start gap-2">
                                             <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
