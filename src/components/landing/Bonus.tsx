@@ -104,7 +104,7 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
-                                <ul className="text-left space-y-2 text-sm mt-auto">
+                                <ul className="text-left space-y-2 text-sm">
                                     {remainingBonuses.map(rb => (
                                         <li key={rb.title} className="flex items-start gap-2">
                                             <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
