@@ -14,7 +14,7 @@ const bonuses = [
         }
     },
     {
-        title: "Bônus #2: Protocolo Anti-Rigidez Para Quem Fica Muito Tempo Sentado",
+        title: "Bônus #2: Protocolo Anti-Rigidez Para Quem<br />Fica Muito Tempo Sentado.",
         description: "Uma rotina de 5 minutos para fazer pausas durante o dia, destravando o corpo e aumentando sua energia.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
@@ -70,7 +70,7 @@ export function Bonus() {
                                 <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-none" : "rounded-b-lg")}>
                                     <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.includes(': ') ? bonus.title.split(': ')[1] : bonus.title }}></h3>
                                     {bonus.image && (
-                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-[18rem]" : "", index === 1 ? "max-w-48 sm:max-w-[18rem]" : "max-w-48 sm:max-w-48")}>
+                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-[19.5rem]" : "", index === 1 ? "max-w-48 sm:max-w-[19.5rem]" : "max-w-48 sm:max-w-48")}>
                                             <Image
                                                 src={bonus.image.imageUrl}
                                                 alt={bonus.title.replace(/<br \/>/g, ' ')}
@@ -80,7 +80,7 @@ export function Bonus() {
                                             />
                                         </div>
                                     )}
-                                    <div className="text-center my-4">
+                                    <div className="text-center my-4 scale-110">
                                         <p className="text-red-500 line-through text-lg">DE: R$47</p>
                                         <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
                                     </div>
@@ -104,14 +104,14 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
-                                <div className="text-center my-4">
+                                <div className="text-center my-4 scale-110">
                                     <p className="text-red-500 line-through text-lg">DE: R$137</p>
                                     <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
                                 </div>
                                 <ul className="text-left space-y-2 text-sm mt-2">
                                     {remainingBonuses.map(rb => (
                                         <li key={rb.title} className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                                            <Gift className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                             <span>{rb.title}</span>
                                         </li>
                                     ))}
