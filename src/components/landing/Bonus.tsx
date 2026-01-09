@@ -63,7 +63,7 @@ export function Bonus() {
                                 <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                                <div className="bg-card shadow-lg rounded-b-lg p-4 flex flex-col items-center h-full">
+                                <div className="bg-card shadow-lg rounded-b-lg p-4 pb-2 flex flex-col items-center h-full">
                                     <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
                                     {bonus.image && (
                                         <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
@@ -90,7 +90,7 @@ export function Bonus() {
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
                             </div>
-                            <div className="bg-card shadow-lg rounded-b-lg p-4 flex flex-col items-center h-full">
+                            <div className="bg-card shadow-lg rounded-b-lg p-4 pb-2 flex flex-col items-center h-full">
                                 <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
                                      <Image
                                         src="https://i.imgur.com/TPJIuNJ.png"
