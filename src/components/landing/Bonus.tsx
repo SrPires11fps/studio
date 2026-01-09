@@ -70,7 +70,7 @@ export function Bonus() {
                                 <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-none" : "rounded-b-lg")}>
                                     <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
                                     {bonus.image && (
-                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-48" : "max-w-32 sm:max-w-32")}>
+                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-48" : "max-w-48 sm:max-w-48")}>
                                             <Image
                                                 src={bonus.image.imageUrl}
                                                 alt={bonus.title.replace(/<br \/>/g, ' ')}
