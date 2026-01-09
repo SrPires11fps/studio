@@ -56,7 +56,7 @@ export function Bonus() {
                         ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 sm:gap-y-12">
                     {bonuses.map((bonus, index) => (
                         <div key={bonus.title} className="flex flex-col items-center text-center">
                             <div className="w-full max-w-xs mx-auto">
@@ -80,7 +80,7 @@ export function Bonus() {
                                         <p className="text-red-500 line-through">DE: R$47</p>
                                         <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
                                     </div>
-                                    <p className="text-sm text-foreground/80 mt-2">{bonus.description}</p>
+                                    <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
                             </div>
                         </div>
