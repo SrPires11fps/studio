@@ -57,7 +57,7 @@ export function Bonus() {
              <div className="container px-2 md:px-6">
                 <div className="text-center mb-12">
                      <p className="mx-auto max-w-[700px] text-foreground/90 text-xl md:text-2xl font-medium">
-                        ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
+                        ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE <strong className="text-green-600 font-bold">BÔNUS</strong> TODOS ESSES MATERIAIS ABAIXO:👇
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-y-12">
