@@ -9,7 +9,7 @@ const bonuses = [
         description: "Alinhe seu corpo dos pés à cabeça, eliminando dores que se originam em outras partes e afetam suas costas.",
         image: {
             id: 'bonus-1',
-            imageUrl: "https://imgur.com/9gRHeBO.png",
+            imageUrl: "https://i.imgur.com/xLAicpv.png",
             imageHint: "ebook cover"
         }
     },
