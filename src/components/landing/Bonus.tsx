@@ -9,7 +9,7 @@ const bonuses = [
         description: "Alinhe seu corpo dos pés à cabeça, eliminando dores que se originam em outras partes e afetam suas costas.",
         image: {
             id: 'bonus-1',
-            imageUrl: "https://i.imgur.com/9gRHeBO.png",
+            imageUrl: "https://imgur.com/9gRHeBO.png",
             imageHint: "ebook cover"
         }
     },
@@ -63,10 +63,10 @@ export function Bonus() {
                                 <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                                <div className="bg-card shadow-lg rounded-b-lg p-4 sm:pb-2 flex flex-col items-center h-full">
-                                    <h3 className="text-lg font-bold mb-2 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
+                                <div className="bg-card shadow-lg rounded-b-lg p-6 flex flex-col items-center">
+                                    <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
                                     {bonus.image && (
-                                        <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-2">
+                                        <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
                                             <Image
                                                 src={bonus.image.imageUrl}
                                                 alt={bonus.title.replace(/<br \/>/g, ' ')}
@@ -76,11 +76,11 @@ export function Bonus() {
                                             />
                                         </div>
                                     )}
-                                    <div className="text-center my-2">
+                                    <div className="text-center my-4">
                                         <p className="text-red-500 line-through">DE: R$47</p>
                                         <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
                                     </div>
-                                    <p className="text-sm text-foreground/80 mt-2 flex-grow pb-1">{bonus.description}</p>
+                                    <p className="text-sm text-foreground/80 mt-2">{bonus.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ export function Bonus() {
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
                             </div>
-                            <div className="bg-card shadow-lg rounded-b-lg p-4 pb-2 flex flex-col items-center h-full">
+                            <div className="bg-card shadow-lg rounded-b-lg p-6 flex flex-col items-center h-full">
                                 <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
                                      <Image
                                         src="https://i.imgur.com/TPJIuNJ.png"
@@ -100,7 +100,7 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
-                                <ul className="text-left space-y-2 text-sm">
+                                <ul className="text-left space-y-2 text-sm mt-auto">
                                     {remainingBonuses.map(rb => (
                                         <li key={rb.title} className="flex items-start gap-2">
                                             <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
