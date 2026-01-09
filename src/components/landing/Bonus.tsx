@@ -47,10 +47,10 @@ const remainingBonuses = [
 export function Bonus() {
     return (
         <section id="bonus" className="w-full py-12 md:py-24 lg:py-32" style={{ backgroundColor: '#f9f8f2' }}>
+            <div className="w-full bg-black text-white text-center py-4 mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-wider">👀 ANTES DE VOCÊ CONTINUAR...</h2>
+            </div>
              <div className="container px-4 md:px-6">
-                <div className="w-full bg-black text-white text-center py-4 mb-8">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-wider">👀 ANTES DE VOCÊ CONTINUAR...</h2>
-                </div>
                 <div className="text-center mb-12">
                      <p className="mx-auto max-w-[700px] text-foreground/90 text-xl md:text-2xl font-medium">
                         ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
@@ -63,10 +63,10 @@ export function Bonus() {
                                 <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                                <div className="bg-card shadow-lg rounded-b-lg p-4 pb-2 flex flex-col items-center h-full">
-                                    <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
+                                <div className="bg-card shadow-lg rounded-b-lg p-4 sm:pb-2 flex flex-col items-center h-full">
+                                    <h3 className="text-lg font-bold mb-2 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
                                     {bonus.image && (
-                                        <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
+                                        <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-2">
                                             <Image
                                                 src={bonus.image.imageUrl}
                                                 alt={bonus.title.replace(/<br \/>/g, ' ')}
