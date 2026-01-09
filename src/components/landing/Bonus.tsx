@@ -104,6 +104,10 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
+                                <div className="text-center my-4">
+                                    <p className="text-red-500 line-through">DE: R$137</p>
+                                    <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
+                                </div>
                                 <ul className="text-left space-y-2 text-sm mt-2">
                                     {remainingBonuses.map(rb => (
                                         <li key={rb.title} className="flex items-start gap-2">
