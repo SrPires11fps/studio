@@ -19,7 +19,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
     {
-        title: "Bônus #3: Alívio Superior: Ombros e Pescoço",
+        title: "Bônus #3: Alívio Superior: Fim da Dor nos Ombros e Pescoço",
         description: "Relaxe a tensão acumulada nos ombros e pescoço, que muitas vezes é a causa de dores de cabeça e desconforto.",
         image: PlaceHolderImages.find(p => p.id === 'bonus-3')
     },
