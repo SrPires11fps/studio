@@ -19,7 +19,7 @@ const bonuses = [
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
     {
-        title: "Bônus #3: Alívio Superior: Fim da Dor nos Ombros e Pescoço",
+        title: "Bônus #3: Fim da Dor nos Ombros e Pescoço",
         description: "Relaxe a tensão acumulada nos ombros e pescoço, que muitas vezes é a causa de dores de cabeça e desconforto.",
         image: {
             id: 'bonus-3',
@@ -68,9 +68,9 @@ export function Bonus() {
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
                                 <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-none" : "rounded-b-lg")}>
-                                    <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
+                                    <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.includes(': ') ? bonus.title.split(': ')[1] : bonus.title }}></h3>
                                     {bonus.image && (
-                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-48" : "max-w-48 sm:max-w-48")}>
+                                        <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-[18rem]" : "", index === 1 ? "max-w-48 sm:max-w-[18rem]" : "max-w-48 sm:max-w-48")}>
                                             <Image
                                                 src={bonus.image.imageUrl}
                                                 alt={bonus.title.replace(/<br \/>/g, ' ')}
