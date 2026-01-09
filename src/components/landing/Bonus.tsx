@@ -95,7 +95,7 @@ export function Bonus() {
                                 🎁 +5 BÔNUS 🎁
                             </div>
                             <div className="bg-card shadow-lg rounded-b-lg p-6 flex flex-col items-center h-full">
-                                <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
+                                <div className="w-full max-w-80 sm:max-w-80 aspect-square relative mb-4">
                                      <Image
                                         src="https://i.imgur.com/8JJsTih.png"
                                         alt="+5 Bônus"
