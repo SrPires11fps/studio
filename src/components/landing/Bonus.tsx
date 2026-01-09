@@ -97,7 +97,7 @@ export function Bonus() {
                             <div className="bg-card shadow-lg rounded-b-lg p-6 flex flex-col items-center h-full">
                                 <div className="w-full max-w-80 sm:max-w-80 aspect-square relative mb-4">
                                      <Image
-                                        src="https://i.imgur.com/8JJsTih.png"
+                                        src="https://i.imgur.com/WugjC0H.png"
                                         alt="+5 Bônus"
                                         fill
                                         className="object-contain rounded-md"
