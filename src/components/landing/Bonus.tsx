@@ -21,7 +21,11 @@ const bonuses = [
     {
         title: "Bônus #3: Alívio Superior: Fim da Dor nos Ombros e Pescoço",
         description: "Relaxe a tensão acumulada nos ombros e pescoço, que muitas vezes é a causa de dores de cabeça e desconforto.",
-        image: PlaceHolderImages.find(p => p.id === 'bonus-3')
+        image: {
+            id: 'bonus-3',
+            imageUrl: "https://i.imgur.com/Z7bnyN6.png",
+            imageHint: "ebook cover"
+        }
     },
 ];
 
@@ -56,14 +60,14 @@ export function Bonus() {
                         ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-3 sm:gap-y-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-y-12">
                     {bonuses.map((bonus, index) => (
-                        <div key={bonus.title} className="flex flex-col items-center text-center">
+                        <div key={bonus.title} className={cn("flex flex-col items-center text-center", index === 1 ? "sm:mt-0" : "", index > 0 ? "mt-0" : "sm:mt-0")}>
                             <div className="w-full max-w-sm mx-auto">
-                                <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
+                                <div className={cn("bg-red-500 text-white font-bold py-2 px-4 text-lg", index === 1 ? "rounded-none" : "rounded-t-lg")}>
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                                <div className="bg-card shadow-lg rounded-b-lg p-6 flex flex-col items-center">
+                                <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-none" : "rounded-b-lg")}>
                                     <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.split(': ')[1] }}></h3>
                                     {bonus.image && (
                                         <div className="w-full max-w-32 sm:max-w-32 aspect-square relative mb-4">
@@ -80,12 +84,12 @@ export function Bonus() {
                                         <p className="text-red-500 line-through">DE: R$47</p>
                                         <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
                                     </div>
-                                    <p className="text-sm text-foreground/80 flex-grow">{bonus.description}</p>
+                                    <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
                             </div>
                         </div>
                     ))}
-                     <div className="flex flex-col items-center text-center">
+                     <div className="flex flex-col items-center text-center mt-3 sm:mt-0">
                         <div className="w-full max-w-sm mx-auto">
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
