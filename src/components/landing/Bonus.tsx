@@ -81,8 +81,8 @@ export function Bonus() {
                                         </div>
                                     )}
                                     <div className="text-center my-4">
-                                        <p className="text-red-500 line-through">DE: R$47</p>
-                                        <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
+                                        <p className="text-red-500 line-through text-lg">DE: R$47</p>
+                                        <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
                                     </div>
                                     <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
@@ -105,8 +105,8 @@ export function Bonus() {
                                     />
                                 </div>
                                 <div className="text-center my-4">
-                                    <p className="text-red-500 line-through">DE: R$137</p>
-                                    <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
+                                    <p className="text-red-500 line-through text-lg">DE: R$137</p>
+                                    <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
                                 </div>
                                 <ul className="text-left space-y-2 text-sm mt-2">
                                     {remainingBonuses.map(rb => (
