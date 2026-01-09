@@ -80,7 +80,7 @@ export function Bonus() {
                                         <p className="text-red-500 line-through">DE: R$47</p>
                                         <p className="text-green-600 font-bold">HOJE: GRÁTIS</p>
                                     </div>
-                                    <p className="text-sm text-foreground/80">{bonus.description}</p>
+                                    <p className="text-sm text-foreground/80 flex-grow">{bonus.description}</p>
                                 </div>
                             </div>
                         </div>
