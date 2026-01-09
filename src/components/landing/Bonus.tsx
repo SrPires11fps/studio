@@ -50,7 +50,7 @@ export function Bonus() {
             <div className="w-full bg-black text-white text-center py-4 mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold tracking-wider">👀 ANTES DE VOCÊ CONTINUAR...</h2>
             </div>
-             <div className="container px-4 md:px-6">
+             <div className="container px-2 md:px-6">
                 <div className="text-center mb-12">
                      <p className="mx-auto max-w-[700px] text-foreground/90 text-xl md:text-2xl font-medium">
                         ESCOLHENDO O <strong className="font-bold">PLANO COMPLETO</strong> VOCÊ RECEBE DE BÔNUS TODOS ESSES MATERIAIS ABAIXO:👇
@@ -59,7 +59,7 @@ export function Bonus() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-3 sm:gap-y-12">
                     {bonuses.map((bonus, index) => (
                         <div key={bonus.title} className="flex flex-col items-center text-center">
-                            <div className="w-full max-w-xs mx-auto">
+                            <div className="w-full max-w-sm mx-auto">
                                 <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
@@ -86,7 +86,7 @@ export function Bonus() {
                         </div>
                     ))}
                      <div className="flex flex-col items-center text-center">
-                        <div className="w-full max-w-xs mx-auto">
+                        <div className="w-full max-w-sm mx-auto">
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
                             </div>
