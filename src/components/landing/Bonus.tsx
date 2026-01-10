@@ -83,7 +83,7 @@ export function Bonus() {
                                     )}
                                     <div className="text-center my-4 scale-125">
                                         <p className="text-red-500 line-through text-lg">DE: R$47</p>
-                                        <p className="text-green-600 font-bold text-xl">HOJE: { index === 0 ? 'INCLUSO GRÁTIS' : 'GRÁTIS'}</p>
+                                        <p className="text-green-600 font-bold text-xl">HOJE: { index === 0 ? 'INCLUSO GRÁTIS' : 'INCLUSO GRÁTIS'}</p>
                                     </div>
                                     <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
