@@ -67,7 +67,7 @@ export function Bonus() {
                                 <div className={cn("bg-red-500 text-white font-bold py-2 px-4 text-lg", index === 1 ? "rounded-none" : "rounded-t-lg")}>
                                     🎁 BÔNUS {index + 1} 🎁
                                 </div>
-                                <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-none" : "rounded-b-lg")}>
+                                <div className={cn("bg-card shadow-lg p-6 flex flex-col items-center", index === 0 ? "rounded-b-lg" : "rounded-b-lg")}>
                                     <h3 className="text-lg font-bold mb-4 h-12 flex items-center" dangerouslySetInnerHTML={{ __html: bonus.title.includes(': ') ? bonus.title.split(': ')[1] : bonus.title }}></h3>
                                     {bonus.image && (
                                         <div className={cn("w-full aspect-square relative mb-4", index === 0 ? "max-w-48 sm:max-w-[19.5rem]" : "", index === 1 ? "max-w-48 sm:max-w-[19.5rem]" : "max-w-48 sm:max-w-48")}>
@@ -82,7 +82,7 @@ export function Bonus() {
                                     )}
                                     <div className="text-center my-4 scale-110">
                                         <p className="text-red-500 line-through text-lg">DE: R$47</p>
-                                        <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
+                                        <p className="text-green-600 font-bold text-xl">HOJE: INCLUSO GRÁTIS</p>
                                     </div>
                                     <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
