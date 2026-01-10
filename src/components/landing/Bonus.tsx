@@ -81,9 +81,9 @@ export function Bonus() {
                                             />
                                         </div>
                                     )}
-                                    <div className="text-center my-4 scale-110">
+                                    <div className="text-center my-4 scale-125">
                                         <p className="text-red-500 line-through text-lg">DE: R$47</p>
-                                        <p className="text-green-600 font-bold text-xl">HOJE: INCLUSO GRÁTIS</p>
+                                        <p className="text-green-600 font-bold text-xl">HOJE: { index === 0 ? 'INCLUSO GRÁTIS' : 'GRÁTIS'}</p>
                                     </div>
                                     <p className="text-sm text-foreground/80">{bonus.description}</p>
                                 </div>
@@ -105,7 +105,7 @@ export function Bonus() {
                                         data-ai-hint="ebook cover stack"
                                     />
                                 </div>
-                                <div className="text-center my-4 scale-110">
+                                <div className="text-center my-4 scale-125">
                                     <p className="text-red-500 line-through text-lg">DE: R$137</p>
                                     <p className="text-green-600 font-bold text-xl">HOJE: INCLUSO GRÁTIS</p>
                                 </div>
@@ -117,6 +117,7 @@ export function Bonus() {
                                         </li>
                                     ))}
                                 </ul>
+                                <p className="text-xs text-foreground/70 mt-4 font-semibold">TODOS OS BÔNUS INCLUSOS NO PLANO COMPLETO</p>
                             </div>
                         </div>
                     </div>
