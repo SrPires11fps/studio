@@ -1,3 +1,4 @@
+
 import { Gift, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -106,7 +107,7 @@ export function Bonus() {
                                 </div>
                                 <div className="text-center my-4 scale-110">
                                     <p className="text-red-500 line-through text-lg">DE: R$137</p>
-                                    <p className="text-green-600 font-bold text-xl">HOJE: GRÁTIS</p>
+                                    <p className="text-green-600 font-bold text-xl">HOJE: INCLUSO GRÁTIS</p>
                                 </div>
                                 <ul className="text-left space-y-2 text-sm mt-2">
                                     {remainingBonuses.map(rb => (
