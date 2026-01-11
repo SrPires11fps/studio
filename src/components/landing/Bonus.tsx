@@ -21,7 +21,7 @@ const bonuses = [
     },
     {
         title: "Bônus #3: Fim da Dor nos Ombros e Pescoço",
-        description: "Relaxe a tensão acumulada nos ombros e pescoço, que muitas vezes é a causa de dores de cabeça e desconforto.",
+        description: "Acabe com as dores nos ombros e pescoço em 1 semana com 6 movimentos simples e rápidos",
         image: {
             id: 'bonus-3',
             imageUrl: "https://i.imgur.com/Z7bnyN6.png",
