@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const bonuses = [
     {
         title: "Bônus #1: Método Anti-Dor nos Quadris, Joelhos e Tornozelos",
-        description: "Alinhe seu corpo dos pés à cabeça, eliminando dores que se originam em outras partes e afetam suas costas.",
+        description: "Elimine em 1 semana as dores nos quadris, joelhos e tornozelos com 6 movimentos simples e rápidos",
         image: {
             id: 'bonus-1',
             imageUrl: "https://i.imgur.com/xLAicpv.png",
@@ -95,7 +95,7 @@ export function Bonus() {
                             <div className="bg-red-500 text-white font-bold py-2 px-4 rounded-t-lg text-lg">
                                 🎁 +5 BÔNUS 🎁
                             </div>
-                            <div className="bg-card shadow-lg rounded-b-lg p-6 pt-2 pb-4 flex flex-col items-center h-full">
+                            <div className="bg-card shadow-lg rounded-b-lg p-6 pt-2 flex flex-col items-center h-full">
                                 <div className="w-full max-w-80 sm:max-w-80 aspect-square relative">
                                      <Image
                                         src="https://i.imgur.com/WugjC0H.png"
