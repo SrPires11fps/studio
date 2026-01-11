@@ -16,7 +16,7 @@ const bonuses = [
     },
     {
         title: "Bônus #2: Protocolo Anti-Rigidez Para Quem<br />Fica Muito Tempo Sentado.",
-        description: "Uma rotina de 5 minutos para fazer pausas durante o dia, destravando o corpo e aumentando sua energia.",
+        description: "Protocolo anti-dores nas costas feito especialmente para quem fica muito tempo sentado",
         image: PlaceHolderImages.find(p => p.id === 'bonus-2')
     },
     {
